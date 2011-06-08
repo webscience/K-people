@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+  <primitive>false</primitive>
+  <delegateAnalysisEngineSpecifiers>
+    <delegateAnalysisEngine key="RoomNumber">
+      <import location="../ex2/RoomNumberAnnotator.xml"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="DateTime">
+      <import location="../ex3/TutorialDateTime.xml"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="Meeting">
+      <import location="MeetingAnnotator.xml"/>
+    </delegateAnalysisEngine>
+  </delegateAnalysisEngineSpecifiers>
+  <analysisEngineMetaData>
+    <name>Meeting Detector TAE Fabio</name>
+    <description>Detects Room Numbers, Times, and Dates in text, and annotates the
+			combination of all three as a meeting.</description>
+    <version/>
+    <vendor/>
+    <configurationParameters searchStrategy="language_fallback"/>
+    <configurationParameterSettings/>
+    <flowConstraints>
+      <fixedFlow>
+        <node>RoomNumber</node>
+        <node>DateTime</node>
+        <node>Meeting</node>
+      </fixedFlow>
+    </flowConstraints>
+    <typePriorities/>
+    <fsIndexCollection/>
+    <capabilities>
+      <capability>
+        <inputs/>
+        <outputs>
+          <type allAnnotatorFeatures="true">org.apache.uima.tutorial.Meeting</type>
+          <type allAnnotatorFeatures="true">org.apache.uima.tutorial.RoomNumber</type>
+          <type allAnnotatorFeatures="true">org.apache.uima.tutorial.DateAnnot</type>
+          <type allAnnotatorFeatures="true">org.apache.uima.tutorial.TimeAnnot</type>
+        </outputs>
+        <languagesSupported>
+          <language>en</language>
+        </languagesSupported>
+      </capability>
+    </capabilities>
+    <operationalProperties>
+      <modifiesCas>true</modifiesCas>
+      <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+      <outputsNewCASes>false</outputsNewCASes>
+    </operationalProperties>
+  </analysisEngineMetaData>
+  <resourceManagerConfiguration/>
+</analysisEngineDescription>

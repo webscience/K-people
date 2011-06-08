@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="KPOutlookAddIn">
+</Property><Property Name="File di soluzione" Value="C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn.sln">
+</Property><Property Name="Date" Value="lunedì 22 novembre 2010">
+</Property><Property Name="Time" Value="16.48">
+</Property></Properties><Event ErrorLevel="0" Project="KPOutlookAddIn" Source="KPOutlookAddIn\KPOutlookAddIn.csproj" Description="Conversione progetto riuscita">
+</Event><Event ErrorLevel="3" Project="KPOutlookAddIn" Source="KPOutlookAddIn\KPOutlookAddIn.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="KPOutlookAddIn.sln" Description="Soluzione convertita correttamente">
+</Event><Event ErrorLevel="3" Project="" Source="KPOutlookAddIn.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="KPOutlookAddIn" Source="KPOutlookAddIn\KPOutlookAddIn.csproj" Description="Analisi completata. Non è richiesto alcun aggiornamento per i file di progetto.">
+</Event></UpgradeLog>

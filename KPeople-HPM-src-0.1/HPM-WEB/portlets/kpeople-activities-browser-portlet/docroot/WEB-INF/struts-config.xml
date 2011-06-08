@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+
+	<action-mappings>
+	    
+	    <action path="/activities-browser/default-search" type="it.webscience.kpeople.web.portlet.activities.action.ActivitiesDefaultSearchAction">
+			<forward name="/activities-browser/activities-per-process" path="/html/activities_per_process.jsp" />
+		</action>
+	    
+		<action path="/activities-browser/view" type="it.webscience.kpeople.web.portlet.activities.action.ViewAction">
+			<forward name="/activities-browser/view" path="/html/view.jsp" />
+		</action>
+		
+		<action path="/activities-browser/view-activity-details" type="it.webscience.kpeople.web.portlet.activities.action.ViewActivityDetails">
+			<forward name="/activities-browser/view-activity-details/richiestacontributo_accept" path="/html/view_activity_details_accept.jsp" />
+			<forward name="/activities-browser/view-activity-details/richiestacontributo_contribute" path="/html/view_activity_details_contribute.jsp" />
+		</action>
+		
+		<action path="/activities-browser/activity-state" type="it.webscience.kpeople.web.portlet.activities.action.ViewAcceptRejectActivity">
+			<forward name="/activities-browser/activity-state/accept" path="/html/view_activity_accepted.jsp" />
+			<forward name="/activities-browser/activity-state/reject" path="/html/view_activity_reject.jsp" />
+		</action>
+		
+		<action path="/activities-browser/invia-contributo" type="it.webscience.kpeople.web.portlet.activities.action.InviaContributo">
+			<forward name="/activities-browser/view-activity-details/richiestacontributo_inviata" path="/html/richiesta_contributo_invio_riuscito.jsp" />
+		</action>
+		
+	</action-mappings>
+
+	<message-resources parameter="it.webscience.kpeople.web.portlet.process.resources.Language" />
+
+</struts-config>

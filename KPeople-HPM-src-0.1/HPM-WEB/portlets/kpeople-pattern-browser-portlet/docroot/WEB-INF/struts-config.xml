@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+	<action-mappings>
+		<action path="/pattern-browser/view" type="it.webscience.kpeople.web.portlet.pattern.action.ViewAction">
+			<forward name="/pattern-browser/view" path="/html/view.jsp" />
+		</action>
+
+		<action path="/pattern-browser/view-pattern-details" type="it.webscience.kpeople.web.portlet.pattern.action.PatternDetailsAction">
+			<forward name="/pattern-browser/view-pattern-richiedi-contributo" path="/html/view_pattern_richiedi_contributo.jsp" />
+		</action>
+
+		<action path="/pattern-browser/view-events-per-pattern" type="it.webscience.kpeople.web.portlet.pattern.action.EventsPerPatternAction">
+			<forward name="/pattern-browser/events-per-pattern" path="/html/events_per_pattern.jsp" />
+		</action>
+
+		<action path="/pattern-browser/create-pattern" type="it.webscience.kpeople.web.portlet.pattern.action.CreatePatternAction">
+			<forward name="/pattern-browser/create-pattern-richiedi-contributo" path="/html/create_pattern_richiedi_contributo.jsp" />
+			<forward name="/pattern-browser/create-create-pattern-delega" path="/html/create_pattern_delega.jsp" />
+			<forward name="/pattern-browser/create-pattern-esclation" path="/html/create_pattern_escalation.jsp" />
+			<forward name="/pattern-browser/create-pattern-pianifica-riunione" path="/html/create_pattern_pianifica_riunione.jsp" />
+			<forward name="/pattern-browser/create-pattern-richiedi-autorizzazione" path="/html/create_pattern_richiedi_autorizzazione.jsp" />
+			<forward name="/pattern-browser/create-pattern-sollecito" path="/html/create_pattern_sollecito.jsp" />
+			<forward name="/pattern-browser/view" path="/html/view.jsp" />
+		</action>
+		
+		<action path="/pattern-browser/create-pattern/richiedi-contributo" type="it.webscience.kpeople.web.portlet.pattern.action.CreatePatternRichiediContributoAction">
+			<forward name="/pattern-browser/create-pattern-richiedi-contributo" path="/html/create_pattern_richiedi_contributo.jsp" />
+			<forward name="/pattern-browser/view" path="/html/view.jsp" />
+		</action>
+	</action-mappings>
+
+	<message-resources parameter="it.webscience.kpeople.web.portlet.process.resources.Language" />
+</struts-config>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="kp:kpeoplemodel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+	<description>K-People Model</description>
+	<author>WebScience</author>
+	<version>1.0</version>
+	<imports>
+		<import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d" />
+		<import uri="http://www.alfresco.org/model/content/1.0" prefix="cm" />
+	</imports>
+	<namespaces>
+		<namespace uri="http://www.webscience.it/kpeople/model/content/1.0" prefix="kp" />
+	</namespaces>
+
+	<aspects>
+		<aspect name="kp:event">
+			<title>Evento</title>
+			<parent>cm:content</parent>
+			<properties>
+				<property name="kp:propText">
+					<type>d:text</type>
+				</property>
+				<property name="kp:propTimestamp">
+					<type>d:datetime</type>
+				</property>
+				<property name="kp:propBoolean">
+					<type>d:boolean</type>
+				</property>
+				<property name="kp:propFloat">
+					<type>d:float</type>
+				</property>
+				<property name="kp:propInt">
+					<type>d:int</type>
+				</property>
+			</properties>
+		</aspect>	
+	</aspects>
+</model>

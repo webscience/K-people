@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KPOutlookAddIn", "KPOutlookAddIn\KPOutlookAddIn.csproj", "{D93DF8DC-0567-471E-83A5-B633EC19B2FE}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "KpeopleSetup", "KpeopleSetup\KpeopleSetup.vdproj", "{ED149583-E191-451F-ACAD-6F42351129F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D93DF8DC-0567-471E-83A5-B633EC19B2FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D93DF8DC-0567-471E-83A5-B633EC19B2FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D93DF8DC-0567-471E-83A5-B633EC19B2FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D93DF8DC-0567-471E-83A5-B633EC19B2FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED149583-E191-451F-ACAD-6F42351129F0}.Debug|Any CPU.ActiveCfg = Debug
+		{ED149583-E191-451F-ACAD-6F42351129F0}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

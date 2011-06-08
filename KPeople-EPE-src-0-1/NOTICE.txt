@@ -1,0 +1,19 @@
+Portions of this product distribution require certain copyright or other notices to 
+be included with the product distribution. These notice may also appear in individual 
+source files.
+
+
+Portions of this product are:
+Copyright 2001 The Apache Software Foundation.  
+Copyright 2000-2002 The Apache Software Foundation
+Copyright 2004 The Apache Software Foundation
+
+
+All rights reserved.
+
+
+This product includes software developed by The Apache Software Foundation 
+(http://www.apache.org/).
+
+This product includes software developed by WSO2 
+http://wso2.com/.

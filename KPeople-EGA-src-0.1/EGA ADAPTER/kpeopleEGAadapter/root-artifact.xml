@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artifact name="kpeopleEGAadapter" version="1.0.0" type="carbon/application">
+    <dependency artifact="adapterpostfix" version="1.0.0" serverRole="ApplicationServer"/>
+    <dependency artifact="adaptersharepoint" version="1.0.0" serverRole="ApplicationServer"/>
+</artifact>

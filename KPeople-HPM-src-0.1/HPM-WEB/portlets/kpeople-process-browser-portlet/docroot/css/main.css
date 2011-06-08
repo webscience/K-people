@@ -1,0 +1,365 @@
+
+/* --------- Stile per il pulsante viola BEGIN -------------- */
+a.button-style-viola-piu {
+    background: url("../images/btnViolaDxPiu.png") no-repeat scroll right top transparent;
+}
+a.button-style-viola-meno {
+    background: url("../images/btnViolaDxMeno.png") no-repeat scroll right top transparent;
+}
+a.button-style-viola {
+    height: 25px;
+    padding-right: 31px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font: 12px arial,sans-serif;
+    text-decoration: none;
+}
+ a.button-style-viola span {
+    background: url("../images/btnViolaSx.png") no-repeat scroll 0 0 transparent;
+    line-height: 24px;
+    padding: 5px 17px 6px 11px;
+}
+/* --------- Stile per il pulsante viola END -------------- */
+
+.kpeople-process-browser-portlet {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.kpeople-process-browser-portlet .results-row td,
+.kpeople-process-browser-portlet .results-row.alt td,
+.kpeople-process-browser-portlet .results-row.hover td {
+    background: none repeat scroll 0 0 transparent;
+    padding: 0;
+}
+
+.kpeople-process-browser-portlet .ordinaPerLblFilter,
+.kpeople-process-browser-portlet .ordinaPerFilter,
+.kpeople-process-browser-portlet .gestitoDaLblFilter,
+.kpeople-process-browser-portlet .gestitoDaFilter {
+    float: left;
+    width: 300px;
+}
+
+.kpeople-process-browser-portlet .dataFilter,
+.kpeople-process-browser-portlet .tipoLblFilter,
+.kpeople-process-browser-portlet .tipoFilter {
+    float: left;
+    width: 200px;
+}
+
+.kpeople-process-browser-portlet .mostraLblFilter,
+.kpeople-process-browser-portlet .mostraFilter,
+.kpeople-process-browser-portlet .dataRange,
+.kpeople-process-browser-portlet .dataLblFilter {
+    float: left;
+}
+
+.kpeople-process-browser-portlet .mostraFilter SPAN {
+	margin-right: 12px;	
+}
+
+.kpeople-process-browser-portlet .advFiltersSeparator {
+	clear: both;
+	height: 5px;
+}
+
+.kpeople-process-browser-portlet .clear {
+	clear: both;
+}
+
+#update-events-associated-at-the-process .goDettagli {
+    float: left;
+    height: 20px;
+    margin-right: 10px;
+    width: 20px;
+}
+
+#update-events-associated-at-the-process .patternClosed {
+    float: left;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 20px;
+}
+
+.kpeople-process-browser-portlet .smplSubmit {
+	background: url("../images/cerca.png");
+	width: 27px;
+	height: 25px;
+	float: left;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.kpeople-process-browser-portlet .switchBtn {
+	margin-left: 10px;	
+	float: left;
+}
+
+.kpeople-process-browser-portlet #simpleSearch {
+	width: 300px;
+}
+
+.kpeople-process-browser-portlet .resultRowA {
+    background-color: #F2F2F2;
+    height: 44px;
+    padding: 9px 30px 5px 5px;
+}
+
+.kpeople-process-browser-portlet .resultsSeparator {
+	height: 1px;
+	background-color: #E6E6E6;
+	margin: 10px 0;
+}
+
+.kpeople-process-browser-portlet .resultRowB {
+    height: 30px;
+    padding: 9px 0 9px 44px;
+    border: 1px solid yellow;
+    display: none;
+}
+
+.kpeople-process-browser-portlet .myIcon {
+	background: url("../images/my_icon.PNG");
+	width: 24px;
+	height: 20px;
+	float: left;
+}
+
+.kpeople-process-browser-portlet .processData {
+	float: left;
+}
+
+.kpeople-process-browser-portlet .visibilityDiv {
+	width: 40px;
+	text-align: center;
+	float: left;
+	margin-right: 7px;
+}
+
+.kpeople-process-browser-portlet .ricAvContainer {
+	height: 100px;
+	width: 100%;
+	display: none;
+	font-weight: bold;
+	font-size: 12px;
+	color: #666666;
+	line-height: 22px;
+}
+
+.kpeople-process-browser-portlet .processName {
+    font-size: 14px;
+    font-weight: bold;
+    height: 20px;
+    line-height: 22px;
+}
+
+.kpeople-process-browser-portlet .processName a {
+	color: #666666;
+	text-decoration: none;
+}
+
+.kpeople-process-browser-portlet .processName a:HOVER {
+	text-decoration: underline;
+}
+
+.kpeople-process-browser-portlet .tuClass {
+	font-weight: bold;
+	color: purple;
+}
+
+.kpeople-process-browser-portlet .processInfo {
+	color: #666666;
+}
+
+.kpeople-process-browser-portlet .statusDays {
+    background: url("../images/boxAperto.png") repeat scroll 0 0 transparent;
+    float: right;
+    height: 33px;
+    width: 146px;
+}
+
+.kpeople-process-browser-portlet .statusDays1 {
+    color: #666666;
+    float: left;
+    font-size: 12px;
+    line-height: 32px;
+    text-align: center;
+    width: 73px;
+}
+
+.kpeople-process-browser-portlet .statusDays2 {
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 33px;
+    text-align: center;
+    width: 71px;
+}
+
+.kpeople-process-browser-portlet .processOwner {
+	color: #9E005D;
+}
+
+.kpeople-process-browser-portlet .statusDays2Negativo {
+	color: #9E005D;	
+}
+
+.kpeople-process-browser-portlet .statusDays2Positivo {
+	color: #8CC63F;	
+}
+
+.kpeople-process-browser-portlet .boxEsclamativo {
+	background: url("../images/box_esclamativo.PNG");
+	width: 24px;
+	height: 20px;
+	float: left;
+}
+
+.kpeople-process-browser-portlet .graffetta {
+    background: url("../images/graffetta.jpg") repeat scroll 0 0 transparent;
+    float: left;
+    height: 21px;
+    width: 13px;
+}
+
+/* Stili per dettaglio processo */
+
+.process-browser-portlet .process-details {
+	color: #666666;
+}
+
+.process-browser-portlet .process-details #header{
+	padding-bottom: 40px;
+}
+
+.process-browser-portlet .process-details #details {
+	padding-bottom: 30px;
+
+}
+
+.process-browser-portlet .process-details .process-title {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    height: 30px;
+    width: 90%;
+}
+
+.process-browser-portlet .process-details .statusDays{
+	margin-top: -30px;
+}
+
+.insert-columnSx {
+	float: left;
+	width: 130px;
+	height: 22px;
+}
+
+.insert-columnDx {
+	float: left;
+	width: 400px;
+	height: 22px;
+}
+
+.insert-row {
+	padding-bottom: 20px;
+}
+
+.row-event-update {
+	border: 1px solid gray;
+	
+	margin-top:4px;
+}
+
+#update-events-associated-at-the-process .eventInfo {
+	color:#666666;
+	height:25px;
+	width: 500px;
+}
+
+#update-events-associated-at-the-process .eventName {
+    color: #222222;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    width: 415px;
+}
+
+#update-events-associated-at-the-process .emailBody {
+    max-height: 130px;
+    overflow: auto;
+    min-height: 25px;
+}
+
+#update-events-associated-at-the-process .eventName span:HOVER {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+#update-events-associated-at-the-process .tableEventdetails {
+	width: 100%;
+	border: 0;
+}
+
+#update-events-associated-at-the-process .tableEventdetails .col1 {
+	width: 95px;
+	min-height: 20px;
+}
+
+.eventData {	
+	margin-left: 120px;
+	margin-top:-43px;
+}
+
+#update-events-associated-at-the-process .event-type {
+    margin: 3px;
+    position: relative;
+    width: 110px;
+}
+
+#update-events-associated-at-the-process .event-type-name {
+    color: #FFFFFF;
+    font-size: 10px;
+    font-weight: bold;
+    left: 1px;
+    line-height: 24px;
+    position: absolute;
+    text-align: center;
+    top: 1px;
+    width: 103px;
+}
+
+#update-events-associated-at-the-process .event-type-id {
+    color: #FFFFFF;
+    font-size: 8px;
+    font-weight: bold;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 28px;
+    width: 105px;
+}
+
+#update-events-associated-at-the-process .eventDetails {
+	margin: 5px;
+	overflow: hidden;
+	display: none;
+}
+
+#update-events-associated-at-the-process .closeDivEventDetails {
+	float:right;	
+}
+
+#update-events-associated-at-the-process {
+	min-height: 200px;	
+}
+
+.process-browser-portlet #update-button {
+	padding-bottom: 50px;
+	padding-top: 30px;
+}

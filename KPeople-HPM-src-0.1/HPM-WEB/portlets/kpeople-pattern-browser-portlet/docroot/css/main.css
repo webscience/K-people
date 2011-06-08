@@ -1,0 +1,215 @@
+/* Stili per dettaglio pattern */
+
+.pattern-browser-portlet .clear {
+	clear: both;
+}
+
+.pattern-browser-portlet .statusDays2Negativo {
+	color: #9E005D;	
+}
+
+.pattern-browser-portlet table .desc {
+	font-weight: bold;
+	width: 100px;
+	height: 18px;	
+}
+
+.pattern-browser-portlet .statusDays2Positivo {
+	color: #8CC63F;	
+}
+
+.pattern-browser-portlet .pattern-details .pattern-title {
+    font-size: 20px;
+    font-weight: bold;
+    height: 30px;
+    width: 90%;
+}
+
+.pattern-browser-portlet .statusDays {
+    background: url("../images/boxAperto.png") repeat scroll 0 0 transparent;
+    float: right;
+    height: 33px;
+    width: 146px;
+}
+
+.pattern-browser-portlet .pattern-details .statusDays{
+	margin-top: -30px;
+}
+
+.pattern-browser-portlet .statusDays1 {
+    color: #666666;
+    float: left;
+    font-size: 12px;
+    line-height: 32px;
+    text-align: center;
+    width: 73px;
+}
+
+.pattern-browser-portlet .statusDays2 {
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 33px;
+    text-align: center;
+    width: 71px;
+}
+
+.pattern-browser-portlet .eventName {
+    color: #222222;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    width: 430px;
+}
+
+.pattern-browser-portlet .eventData {	
+	margin-left: 120px;
+	margin-top:-43px;
+}
+
+.pattern-browser-portlet .eventInfo {
+    color: #666666;
+    height: 25px;
+    width: 500px;
+}
+
+.pattern-browser-portlet .clear {
+    clear: both;
+}
+
+.pattern-browser-portlet .row-event-update {
+    border: 1px solid gray;
+    margin-top: 4px;
+}
+
+.pattern-browser-portlet .event-type {
+    margin: 3px;
+    position: relative;
+    width: 110px;
+}
+
+
+#update-events-associated-at-the-pattern .eventInfo {
+	color:#666666;
+	height:25px;
+	width: 500px;
+}
+
+#update-events-associated-at-the-pattern .eventName {
+    color: #222222;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    width: 430px;
+}
+
+#update-events-associated-at-the-pattern .emailBody {
+    max-height: 130px;
+    overflow: auto;
+    min-height: 25px;
+}
+
+#update-events-associated-at-the-pattern .eventName span:HOVER {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+#update-events-associated-at-the-pattern .tableEventdetails {
+	width: 100%;
+	border: 0;
+}
+
+#update-events-associated-at-the-pattern .tableEventdetails .col1 {
+	width: 95px;
+	min-height: 20px;
+}
+
+.eventData {	
+	margin-left: 120px;
+	margin-top:-43px;
+}
+
+#update-events-associated-at-the-pattern .event-type {
+    margin: 3px;
+    position: relative;
+    width: 110px;
+}
+
+#update-events-associated-at-the-pattern .event-type-name {
+    color: #FFFFFF;
+    font-size: 10px;
+    font-weight: bold;
+    left: 1px;
+    line-height: 24px;
+    position: absolute;
+    text-align: center;
+    top: 1px;
+    width: 103px;
+}
+
+#update-events-associated-at-the-pattern .event-type-id {
+    color: #FFFFFF;
+    font-size: 8px;
+    font-weight: bold;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 28px;
+    width: 105px;
+}
+
+#update-events-associated-at-the-pattern .eventDetails {
+	margin: 5px;
+	overflow: hidden;
+	display: none;
+}
+
+#update-events-associated-at-the-pattern .closeDivEventDetails {
+	float:right;	
+}
+
+#update-events-associated-at-the-pattern {
+	min-height: 200px;	
+}
+
+#update-events-associated-at-the-pattern .clear {
+	clear: both;
+}
+
+#update-events-associated-at-the-pattern .row-event-update {
+    border: 1px solid gray;
+    margin-top: 4px;
+}
+
+#update-events-associated-at-the-pattern .results-row td,
+#update-events-associated-at-the-pattern .results-row.alt td,
+#update-events-associated-at-the-pattern .results-row.hover td {
+    background: none repeat scroll 0 0 transparent;
+    padding: 0;
+}
+
+.pattern-list-top {
+	height: 50px;
+}
+        
+.pattern-list-command {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}  
+
+.pattern-list-button {
+    width: 20%;
+    float: left;
+}  
+
+.pattern-list-button input{
+	width: 140px;
+}  
+
+.pattern-list-description {
+    width: 80%;
+    float: left;
+}  
+          

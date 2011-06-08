@@ -1,0 +1,97 @@
+.kpeople-global-search-portlet .gray-text {
+	color: #666;
+	width: 650px;
+}
+
+.kpeople-global-search-portlet .normal-text {
+	width: 650px;
+}
+
+.kpeople-global-search-portlet .submitDisabled {
+	opacity: 0.3;
+}
+
+.kpeople-global-search-portlet .smplSubmit {
+	background: url("../images/cerca.png");
+	width: 27px;
+	height: 25px;
+	float: left;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.kpeople-global-search-portlet .event-type {
+	float: left;
+    margin-left: 3px;
+    margin-right: 10px;
+    margin-top: 0px;
+    width: 105px;
+    height: 46px;
+        position: relative;
+}
+
+.kpeople-global-search-portlet .event-type-name {
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    top: 6px;
+    text-transform: uppercase;
+}
+
+.kpeople-global-search-portlet .event-type-id {
+    color: #FFFFFF;
+    font-size: 8px;
+    font-weight: bold;
+    left: 0;
+    position: relative;
+    text-align: center;
+    top: 15px;
+    width: 105px;
+    text-transform: uppercase;
+}
+
+.kpeople-global-search-portlet .contributo {
+	background: url("../images/pattern.png");
+}
+
+.kpeople-global-search-portlet .process {
+    background: url("../images/process.png");
+}
+
+.kpeople-global-search-portlet .mail {
+    background: url("../images/mail.gif");
+}
+
+.kpeople-global-search-portlet .down_event {
+    background: url("../images/document_download.png");
+}
+
+.kpeople-global-search-portlet .upload {
+    background: url("../images/upload.gif");
+}
+
+.kpeople-global-search-portlet .user {
+    background: url("../images/user.gif");
+}
+
+.kpeople-global-search-portlet .processName {
+	font-weight: bold;
+	color: #666666;
+	font-size: 14px;
+	padding-bottom:10px;
+}
+
+.kpeople-global-search-portlet .eventDetails {
+	margin: 5px;
+	overflow: hidden;
+	display: none;
+	clear:both;
+}
+
+.kpeople-global-search-portlet .portlet-borderless-bar{
+	background: none;
+
+}
+

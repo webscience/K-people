@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<event xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SHAREPOINT.systemId41082011-05-13 12:24:43.0">
+  <action>
+    <action-type>DOCUMENT/DELETED</action-type>
+    <action-reference>http://192.168.0.106:80/Documents/Percentuale_Media_Ritardo_Processo.png</action-reference>
+    <system>
+      <system-id>SHAREPOINT.systemId</system-id>
+      <system-type>SHAREPOINT</system-type>
+    </system>
+  </action>
+  <event-data/>
+</event>

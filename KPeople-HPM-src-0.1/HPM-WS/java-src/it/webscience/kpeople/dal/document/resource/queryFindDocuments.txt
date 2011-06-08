@@ -1,0 +1,16 @@
+PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX owl:<http://www.w3.org/2002/07/owl#>
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX protons:<http://proton.semanticweb.org/2005/04/protons#>
+PREFIX protont:<http://proton.semanticweb.org/2005/04/protont#>
+PREFIX kp:<http://kpeople.webscience.it/ontologies/2010/12/kpbase#>
+
+SELECT 
+?Document WHERE { 
+<http://kpeople.webscience.it/ontologies/2010/12/kpbase.owl#__HPM_PROCESS_ID__>
+<http://kpeople.webscience.it/ontologies/2010/12/kpbase.owl#processEvent> 
+?Event . 
+?Event 
+<http://kpeople.webscience.it/ontologies/2010/12/kpbase.owl#eventAttachment> 
+?Document }

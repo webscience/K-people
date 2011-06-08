@@ -1,0 +1,6 @@
+#Contains the information about the axis2 service generation information from the eclipse workspace
+#Wed Mar 09 00:55:04 CET 2011
+Class-name=it.webscience.kpeople.service.cross.GlobalSearchService
+Type=FROM_CLASS
+Service-name=GlobalSearchServiceV1
+Projects=CarbonApp

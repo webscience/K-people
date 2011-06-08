@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Eclipse-LazyStart: false
+Bundle-Version: 1.0
+Bundle-Name: it.webscience.kpeople.logging
+Bundle-Activator: it.webscience.kpeople.logging.LoggingActivator
+Bundle-ManifestVersion: 2
+Carbon-Component: UIBundle
+Import-Package: org.apache.log4j,
+ org.apache.log4j.xml,
+ org.osgi.framework;version="1.3.0"
+Bundle-SymbolicName: it.webscience.kpeople.logging
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: it.webscience.kpeople.logging.serviceInterface
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+

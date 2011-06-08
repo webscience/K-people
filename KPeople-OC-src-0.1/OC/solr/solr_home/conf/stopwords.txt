@@ -1,0 +1,923 @@
+# Licensed to the Apache Software Foundation (ASF) under one or more
+# contributor license agreements.  See the NOTICE file distributed with
+# this work for additional information regarding copyright ownership.
+# The ASF licenses this file to You under the Apache License, Version 2.0
+# (the "License"); you may not use this file except in compliance with
+# the License.  You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+#-----------------------------------------------------------------------
+# a couple of test stopwords to test that the words are really being
+# configured from this file:
+stopworda
+stopwordb
+
+#Standard english stop words taken from Lucene's StopAnalyzer
+a
+an
+and
+are
+as
+at
+be
+but
+by
+for
+if
+in
+into
+is
+it
+no
+not
+of
+on
+or
+s
+such
+t
+that
+the
+their
+then
+there
+these
+they
+this
+to
+was
+will
+with
+
+ # From svn.tartarus.org/snowball/trunk/website/algorithms/italian/stop.txt
+ # This file is distributed under the BSD License.
+ # See http://snowball.tartarus.org/license.php
+ # Also see http://www.opensource.org/licenses/bsd-license.html
+ #  - Encoding was converted to UTF-8.
+ #  - This notice was added.
+
+ # An Italian stop word list. Comments begin with vertical bar. Each stop
+ # word is at the start of a line.
+
+ad             #  a (to) before vowel
+al             #  a + il
+allo           #  a + lo
+ai             #  a + i
+agli           #  a + gli
+all            #  a + l'
+agl            #  a + gl'
+alla           #  a + la
+alle           #  a + le
+con            #  with
+col            #  con + il
+coi            #  con + i (forms collo, cogli etc are now very rare)
+da             #  from
+dal            #  da + il
+dallo          #  da + lo
+dai            #  da + i
+dagli          #  da + gli
+dall           #  da + l'
+dagl           #  da + gll'
+dalla          #  da + la
+dalle          #  da + le
+di             #  of
+del            #  di + il
+dello          #  di + lo
+dei            #  di + i
+degli          #  di + gli
+dell           #  di + l'
+degl           #  di + gl'
+della          #  di + la
+delle          #  di + le
+in             #  in
+nel            #  in + el
+nello          #  in + lo
+nei            #  in + i
+negli          #  in + gli
+nell           #  in + l'
+negl           #  in + gl'
+nella          #  in + la
+nelle          #  in + le
+su             #  on
+sul            #  su + il
+sullo          #  su + lo
+sui            #  su + i
+sugli          #  su + gli
+sull           #  su + l'
+sugl           #  su + gl'
+sulla          #  su + la
+sulle          #  su + le
+per            #  through, by
+tra            #  among
+contro         #  against
+io             #  I
+tu             #  thou
+lui            #  he
+lei            #  she
+noi            #  we
+voi            #  you
+loro           #  they
+mio            #  my
+mia            #
+miei           #
+mie            #
+tuo            #
+tua            #
+tuoi           #  thy
+tue            #
+suo            #
+sua            #
+suoi           #  his, her
+sue            #
+nostro         #  our
+nostra         #
+nostri         #
+nostre         #
+vostro         #  your
+vostra         #
+vostri         #
+vostre         #
+mi             #  me
+ti             #  thee
+ci             #  us, there
+vi             #  you, there
+lo             #  him, the
+la             #  her, the
+li             #  them
+le             #  them, the
+gli            #  to him, the
+ne             #  from there etc
+il             #  the
+un             #  a
+uno            #  a
+una            #  a
+ma             #  but
+ed             #  and
+se             #  if
+perché         #  why, because
+anche          #  also
+come           #  how
+dov            #  where (as dov')
+dove           #  where
+che            #  who, that
+chi            #  who
+cui            #  whom
+non            #  not
+più            #  more
+quale          #  who, that
+quanto         #  how much
+quanti         #
+quanta         #
+quante         #
+quello         #  that
+quelli         #
+quella         #
+quelle         #
+questo         #  this
+questi         #
+questa         #
+queste         #
+si             #  yes
+tutto          #  all
+tutti          #  all
+
+               #  single letter forms:
+
+a              #  at
+c              #  as c' for ce or ci
+e              #  and
+i              #  the
+l              #  as l'
+o              #  or
+
+               # forms of avere, to have (not including the infinitive):
+
+ho
+hai
+ha
+abbiamo
+avete
+hanno
+abbia
+abbiate
+abbiano
+avrà
+avrai
+avrò
+avremo
+avrete
+avranno
+avrei
+avresti
+avrebbe
+avremmo
+avreste
+avrebbero
+avevo
+avevi
+aveva
+avevamo
+avevate
+avevano
+ebbi
+avesti
+ebbe
+avemmo
+aveste
+ebbero
+avessi
+avesse
+avessimo
+avessero
+avendo
+avuto
+avuta
+avuti
+avute
+
+               # forms of essere, to be (not including the infinitive):
+sono
+sei
+è
+siamo
+siete
+sia
+siate
+siano
+sarà
+sarai
+sarò
+saremo
+sarete
+saranno
+sarei
+saresti
+sarebbe
+saremmo
+sareste
+sarebbero
+ero
+eri
+era
+eravamo
+eravate
+erano
+fui
+fosti
+fu
+fummo
+foste
+furono
+fossi
+fosse
+fossimo
+fossero
+essendo
+
+               # forms of fare, to do (not including the infinitive, fa, fatto
+faccio
+fai
+facciamo
+fanno
+faccia
+facciate
+facciano
+farà
+farai
+farò
+faremo
+farete
+faranno
+farei
+faresti
+farebbe
+faremmo
+fareste
+farebbero
+facevo
+facevi
+faceva
+facevamo
+facevate
+facevano
+feci
+facesti
+fece
+facemmo
+faceste
+fecero
+facessi
+facesse
+facessimo
+facessero
+facendo
+
+               # forms of stare, to be (not including the infinitive):
+sto
+stai
+sta
+stiamo
+stanno
+stia
+stiate
+stiano
+starà
+starai
+starò
+staremo
+starete
+staranno
+starei
+staresti
+starebbe
+staremmo
+stareste
+starebbero
+stavo
+stavi
+stava
+stavamo
+stavate
+stavano
+stetti
+stesti
+stette
+stemmo
+steste
+stettero
+stessi
+stesse
+stessimo
+stessero
+stando
+
+ # From svn.tartarus.org/snowball/trunk/website/algorithms/spanish/stop.txt
+ # This file is distributed under the BSD License.
+ # See http://snowball.tartarus.org/license.php
+ # Also see http://www.opensource.org/licenses/bsd-license.html
+ #  - Encoding was converted to UTF-8.
+ #  - This notice was added.
+
+ # A Spanish stop word list. Comments begin with vertical bar. Each stop
+ # word is at the start of a line.
+
+
+ # The following is a ranked list (commonest to rarest) of stopwords
+ # deriving from a large sample of text.
+
+ # Extra words have been added at the end.
+
+de             #  from, of
+la             #  the, her
+que            #  who, that
+el             #  the
+en             #  in
+y              #  and
+a              #  to
+los            #  the, them
+del            #  de + el
+se             #  himself, from him etc
+las            #  the, them
+por            #  for, by, etc
+un             #  a
+para           #  for
+con            #  with
+no             #  no
+una            #  a
+su             #  his, her
+al             #  a + el
+  # es         from SER
+lo             #  him
+como           #  how
+más            #  more
+pero           #  pero
+sus            #  su plural
+le             #  to him, her
+ya             #  already
+o              #  or
+  # fue        from SER
+este           #  this
+  # ha         from HABER
+sí             #  himself etc
+porque         #  because
+esta           #  this
+  # son        from SER
+entre          #  between
+  # está     from ESTAR
+cuando         #  when
+muy            #  very
+sin            #  without
+sobre          #  on
+  # ser        from SER
+  # tiene      from TENER
+también        #  also
+me             #  me
+hasta          #  until
+hay            #  there is/are
+donde          #  where
+  # han        from HABER
+quien          #  whom, that
+  # están      from ESTAR
+  # estado     from ESTAR
+desde          #  from
+todo           #  all
+nos            #  us
+durante        #  during
+  # estados    from ESTAR
+todos          #  all
+uno            #  a
+les            #  to them
+ni             #  nor
+contra         #  against
+otros          #  other
+  # fueron     from SER
+ese            #  that
+eso            #  that
+  # había      from HABER
+ante           #  before
+ellos          #  they
+e              #  and (variant of y)
+esto           #  this
+mí             #  me
+antes          #  before
+algunos        #  some
+qué            #  what?
+unos           #  a
+yo             #  I
+otro           #  other
+otras          #  other
+otra           #  other
+él             #  he
+tanto          #  so much, many
+esa            #  that
+estos          #  these
+mucho          #  much, many
+quienes        #  who
+nada           #  nothing
+muchos         #  many
+cual           #  who
+  # sea        from SER
+poco           #  few
+ella           #  she
+estar          #  to be
+  # haber      from HABER
+estas          #  these
+  # estaba     from ESTAR
+  # estamos    from ESTAR
+algunas        #  some
+algo           #  something
+nosotros       #  we
+
+      # other forms
+
+mi             #  me
+mis            #  mi plural
+tú             #  thou
+te             #  thee
+ti             #  thee
+tu             #  thy
+tus            #  tu plural
+ellas          #  they
+nosotras       #  we
+vosotros       #  you
+vosotras       #  you
+os             #  you
+mío            #  mine
+mía            #
+míos           #
+mías           #
+tuyo           #  thine
+tuya           #
+tuyos          #
+tuyas          #
+suyo           #  his, hers, theirs
+suya           #
+suyos          #
+suyas          #
+nuestro        #  ours
+nuestra        #
+nuestros       #
+nuestras       #
+vuestro        #  yours
+vuestra        #
+vuestros       #
+vuestras       #
+esos           #  those
+esas           #  those
+
+               # forms of estar, to be (not including the infinitive):
+estoy
+estás
+está
+estamos
+estáis
+están
+esté
+estés
+estemos
+estéis
+estén
+estaré
+estarás
+estará
+estaremos
+estaréis
+estarán
+estaría
+estarías
+estaríamos
+estaríais
+estarían
+estaba
+estabas
+estábamos
+estabais
+estaban
+estuve
+estuviste
+estuvo
+estuvimos
+estuvisteis
+estuvieron
+estuviera
+estuvieras
+estuviéramos
+estuvierais
+estuvieran
+estuviese
+estuvieses
+estuviésemos
+estuvieseis
+estuviesen
+estando
+estado
+estada
+estados
+estadas
+estad
+
+               # forms of haber, to have (not including the infinitive):
+he
+has
+ha
+hemos
+habéis
+han
+haya
+hayas
+hayamos
+hayáis
+hayan
+habré
+habrás
+habrá
+habremos
+habréis
+habrán
+habría
+habrías
+habríamos
+habríais
+habrían
+había
+habías
+habíamos
+habíais
+habían
+hube
+hubiste
+hubo
+hubimos
+hubisteis
+hubieron
+hubiera
+hubieras
+hubiéramos
+hubierais
+hubieran
+hubiese
+hubieses
+hubiésemos
+hubieseis
+hubiesen
+habiendo
+habido
+habida
+habidos
+habidas
+
+               # forms of ser, to be (not including the infinitive):
+soy
+eres
+es
+somos
+sois
+son
+sea
+seas
+seamos
+seáis
+sean
+seré
+serás
+será
+seremos
+seréis
+serán
+sería
+serías
+seríamos
+seríais
+serían
+era
+eras
+éramos
+erais
+eran
+fui
+fuiste
+fue
+fuimos
+fuisteis
+fueron
+fuera
+fueras
+fuéramos
+fuerais
+fueran
+fuese
+fueses
+fuésemos
+fueseis
+fuesen
+siendo
+sido
+  #  sed also means 'thirst'
+
+               # forms of tener, to have (not including the infinitive):
+tengo
+tienes
+tiene
+tenemos
+tenéis
+tienen
+tenga
+tengas
+tengamos
+tengáis
+tengan
+tendré
+tendrás
+tendrá
+tendremos
+tendréis
+tendrán
+tendría
+tendrías
+tendríamos
+tendríais
+tendrían
+tenía
+tenías
+teníamos
+teníais
+tenían
+tuve
+tuviste
+tuvo
+tuvimos
+tuvisteis
+tuvieron
+tuviera
+tuvieras
+tuviéramos
+tuvierais
+tuvieran
+tuviese
+tuvieses
+tuviésemos
+tuvieseis
+tuviesen
+teniendo
+tenido
+tenida
+tenidos
+tenidas
+tened
+
+ # From svn.tartarus.org/snowball/trunk/website/algorithms/hungarian/stop.txt
+ # This file is distributed under the BSD License.
+ # See http://snowball.tartarus.org/license.php
+ # Also see http://www.opensource.org/licenses/bsd-license.html
+ #  - Encoding was converted to UTF-8.
+ #  - This notice was added.
+ 
+# Hungarian stop word list
+# prepared by Anna Tordai
+
+a
+ahogy
+ahol
+aki
+akik
+akkor
+alatt
+által
+általában
+amely
+amelyek
+amelyekben
+amelyeket
+amelyet
+amelynek
+ami
+amit
+amolyan
+amíg
+amikor
+át
+abban
+ahhoz
+annak
+arra
+arról
+az
+azok
+azon
+azt
+azzal
+azért
+aztán
+azután
+azonban
+bár
+be
+belül
+benne
+cikk
+cikkek
+cikkeket
+csak
+de
+e
+eddig
+egész
+egy
+egyes
+egyetlen
+egyéb
+egyik
+egyre
+ekkor
+el
+elég
+ellen
+elő
+először
+előtt
+első
+én
+éppen
+ebben
+ehhez
+emilyen
+ennek
+erre
+ez
+ezt
+ezek
+ezen
+ezzel
+ezért
+és
+fel
+felé
+hanem
+hiszen
+hogy
+hogyan
+igen
+így
+illetve
+ill.
+ill
+ilyen
+ilyenkor
+ison
+ismét
+itt
+jó
+jól
+jobban
+kell
+kellett
+keresztül
+keressünk
+ki
+kívül
+között
+közül
+legalább
+lehet
+lehetett
+legyen
+lenne
+lenni
+lesz
+lett
+maga
+magát
+majd
+majd
+már
+más
+másik
+meg
+még
+mellett
+mert
+mely
+melyek
+mi
+mit
+míg
+miért
+milyen
+mikor
+minden
+mindent
+mindenki
+mindig
+mint
+mintha
+mivel
+most
+nagy
+nagyobb
+nagyon
+ne
+néha
+nekem
+neki
+nem
+néhány
+nélkül
+nincs
+olyan
+ott
+össze
+ő
+ők
+őket
+pedig
+persze
+rá
+s
+saját
+sem
+semmi
+sok
+sokat
+sokkal
+számára
+szemben
+szerint
+szinte
+talán
+tehát
+teljes
+tovább
+továbbá
+több
+úgy
+ugyanis
+új
+újabb
+újra
+után
+utána
+utolsó
+vagy
+vagyis
+valaki
+valami
+valamint
+való
+vagyok
+van
+vannak
+volt
+voltam
+voltak
+voltunk
+vissza
+vele
+viszont
+volna

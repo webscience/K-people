@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:ax2269="http://datatypes.service.kpeople.webscience.it/xsd" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:ax2267="http://exception.service.kpeople.webscience.it/xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:ns="http://process.service.kpeople.webscience.it" xmlns:ns1="http://org.apache.axis2/xsd" targetNamespace="http://process.service.kpeople.webscience.it" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>ProcessMetadataService</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://exception.service.kpeople.webscience.it/xsd">
+      <xs:complexType name="KPeopleServiceException">
+        <xs:sequence />
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:ax2268="http://exception.service.kpeople.webscience.it/xsd" xmlns:ax2270="http://datatypes.service.kpeople.webscience.it/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://process.service.kpeople.webscience.it">
+      <xs:import namespace="http://exception.service.kpeople.webscience.it/xsd" />
+      <xs:import namespace="http://datatypes.service.kpeople.webscience.it/xsd" />
+      <xs:element name="KPeopleServiceException">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="KPeopleServiceException" nillable="true" type="ax2268:KPeopleServiceException" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getMetadataProcessV1">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="user" nillable="true" type="ax2270:User" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getMetadataProcessV1Response">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="ax2270:ProcessMetadataSet" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://datatypes.service.kpeople.webscience.it/xsd">
+      <xs:complexType name="User">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="account" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="firstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="hpmUserId" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="idUser" type="xs:int" />
+          <xs:element minOccurs="0" name="lastName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="screenName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ProcessMetadataSet">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="cmpMetadataList" nillable="true" type="ax2269:ProcessCompoundMetadata" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="ruleSetList" nillable="true" type="ax2269:ProcessRule" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ProcessCompoundMetadata">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="key" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="metadataList" nillable="true" type="ax2269:ProcessMetadata" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ProcessMetadata">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="key" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="valueList" nillable="true" type="ax2269:ProcessValue" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ProcessValue">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="listProcessExtraData" nillable="true" type="ax2269:ProcessExtraData" />
+          <xs:element minOccurs="0" name="value" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="zidState" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ProcessExtraData">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="key" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="value" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ProcessRule">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="key" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="value" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getMetadataProcessV1Request">
+    <wsdl:part name="parameters" element="ns:getMetadataProcessV1" />
+  </wsdl:message>
+  <wsdl:message name="getMetadataProcessV1Response">
+    <wsdl:part name="parameters" element="ns:getMetadataProcessV1Response" />
+  </wsdl:message>
+  <wsdl:message name="KPeopleServiceException">
+    <wsdl:part name="parameters" element="ns:KPeopleServiceException" />
+  </wsdl:message>
+  <wsdl:portType name="ProcessMetadataServicePortType">
+    <wsdl:operation name="getMetadataProcessV1">
+      <wsdl:input wsaw:Action="urn:getMetadataProcessV1" message="ns:getMetadataProcessV1Request" />
+      <wsdl:output wsaw:Action="urn:getMetadataProcessV1Response" message="ns:getMetadataProcessV1Response" />
+      <wsdl:fault wsaw:Action="urn:getMetadataProcessV1KPeopleServiceException" name="KPeopleServiceException" message="ns:KPeopleServiceException" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ProcessMetadataServiceSoap11Binding" type="ns:ProcessMetadataServicePortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getMetadataProcessV1">
+      <soap:operation soapAction="urn:getMetadataProcessV1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="KPeopleServiceException">
+        <soap:fault use="literal" name="KPeopleServiceException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ProcessMetadataServiceSoap12Binding" type="ns:ProcessMetadataServicePortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getMetadataProcessV1">
+      <soap12:operation soapAction="urn:getMetadataProcessV1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="KPeopleServiceException">
+        <soap12:fault use="literal" name="KPeopleServiceException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ProcessMetadataServiceHttpBinding" type="ns:ProcessMetadataServicePortType">
+    <http:binding verb="POST" />
+    <wsdl:operation name="getMetadataProcessV1">
+      <http:operation location="getMetadataProcessV1" />
+      <wsdl:input>
+        <mime:content part="parameters" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ProcessMetadataService">
+    <wsdl:port name="ProcessMetadataServiceHttpSoap11Endpoint" binding="ns:ProcessMetadataServiceSoap11Binding">
+      <soap:address location="http://192.168.0.99:9763/services/ProcessMetadataService.ProcessMetadataServiceHttpSoap11Endpoint/" />
+    </wsdl:port>
+    <wsdl:port name="ProcessMetadataServiceHttpsSoap11Endpoint" binding="ns:ProcessMetadataServiceSoap11Binding">
+      <soap:address location="https://192.168.0.99:9443/services/ProcessMetadataService.ProcessMetadataServiceHttpsSoap11Endpoint/" />
+    </wsdl:port>
+    <wsdl:port name="ProcessMetadataServiceHttpSoap12Endpoint" binding="ns:ProcessMetadataServiceSoap12Binding">
+      <soap12:address location="http://192.168.0.99:9763/services/ProcessMetadataService.ProcessMetadataServiceHttpSoap12Endpoint/" />
+    </wsdl:port>
+    <wsdl:port name="ProcessMetadataServiceHttpsSoap12Endpoint" binding="ns:ProcessMetadataServiceSoap12Binding">
+      <soap12:address location="https://192.168.0.99:9443/services/ProcessMetadataService.ProcessMetadataServiceHttpsSoap12Endpoint/" />
+    </wsdl:port>
+    <wsdl:port name="ProcessMetadataServiceHttpsEndpoint" binding="ns:ProcessMetadataServiceHttpBinding">
+      <http:address location="https://192.168.0.99:9443/services/ProcessMetadataService.ProcessMetadataServiceHttpsEndpoint/" />
+    </wsdl:port>
+    <wsdl:port name="ProcessMetadataServiceHttpEndpoint" binding="ns:ProcessMetadataServiceHttpBinding">
+      <http:address location="http://192.168.0.99:9763/services/ProcessMetadataService.ProcessMetadataServiceHttpEndpoint/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

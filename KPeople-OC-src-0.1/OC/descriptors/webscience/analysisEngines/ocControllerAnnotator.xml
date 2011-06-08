@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+  <primitive>false</primitive>
+  <delegateAnalysisEngineSpecifiers>
+    <delegateAnalysisEngine key="ActionAnnotator">
+      <import location="../annotators/ActionAnnotator.xml"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="HpmAnnotator">
+      <import location="../annotators/HpmAnnotator.xml"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="OcLdapAnnotator">
+      <import location="../annotators/OcLdapAnnotator.xml"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="ocCasConsumer">
+      <import location="../casConsumers/ocCasConsumer.xml"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="DateAnnotator">
+      <import location="../annotators/DateAnnotator.xml"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="EventDataAnnotator">
+      <import location="../annotators/EventDataAnnotator.xml"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="OcStorageAnnotator">
+      <import location="../annotators/OcStorageAnnotator.xml"/>
+    </delegateAnalysisEngine>
+  </delegateAnalysisEngineSpecifiers>
+  <analysisEngineMetaData>
+    <name>ocControllerAnnotator</name>
+    <description/>
+    <version>1.0</version>
+    <vendor/>
+    <configurationParameters searchStrategy="language_fallback"/>
+    <configurationParameterSettings/>
+    <flowConstraints>
+      <fixedFlow>
+        <node>ActionAnnotator</node>
+        <node>EventDataAnnotator</node>
+        <node>DateAnnotator</node>
+        <node>OcLdapAnnotator</node>
+        <node>OcStorageAnnotator</node>
+        <node>HpmAnnotator</node>
+      </fixedFlow>
+    </flowConstraints>
+    <typePriorities/>
+    <fsIndexCollection/>
+    <capabilities>
+      <capability>
+        <inputs/>
+        <outputs/>
+        <languagesSupported/>
+      </capability>
+    </capabilities>
+    <operationalProperties>
+      <modifiesCas>true</modifiesCas>
+      <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+      <outputsNewCASes>false</outputsNewCASes>
+    </operationalProperties>
+  </analysisEngineMetaData>
+  <resourceManagerConfiguration/>
+</analysisEngineDescription>

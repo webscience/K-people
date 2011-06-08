@@ -1,0 +1,73 @@
+#document-browser-portlet .docContainerTop {
+    background: url("../images/docs_open.png") repeat scroll 0 0 transparent;
+    height: 18px;
+    position: relative;
+    width: 321px;
+}
+
+#document-browser-portlet .arrow {
+    height: 7px;
+    left: 282px;
+    position: absolute;
+    top: 13px;
+    width: 14px;
+    cursor: pointer;
+}
+
+#document-browser-portlet .arrowUp {
+	background: url("../images/arrow_up.png");
+}
+
+#document-browser-portlet .arrowDown {
+	display: none;
+	background: url("../images/arrow_down.png");
+}
+
+#document-browser-portlet .docContainerTop .lbl {
+    color: #9E005D;
+    font-size: 12px;
+    font-weight: bold;
+    left: 32px;
+    position: absolute;
+    top: 10px;
+}
+
+#document-browser-portlet .docContainerBottom {
+    background: url("../images/docs_close.png") repeat scroll 0 0 transparent;
+    height: 18px;
+    width: 321px;
+}
+
+#document-browser-portlet .docContainerRpt {
+    background: url("../images/docs_rpt.png") repeat scroll 0 0 transparent;
+    padding: 13px 0 6px 14px;
+    width: 307px;
+    height: 120px;
+    overflow: hidden;
+}
+
+#document-browser-portlet-results-box {
+    margin-top: 7px;
+    width: 292px;
+}
+
+#document-browser-portlet-results-box .results-row.alt td {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+
+#document-browser-portlet-results-box .results-row.hover td {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+
+#document-browser-portlet-results-box .taglib-search-iterator a {
+    color: blue;
+    text-decoration: none;
+}
+
+#document-browser-portlet-results-box .taglib-search-iterator a:HOVER {
+	text-decoration: underline;
+}
+
+#document-browser-portlet-results-box .hover {
+	background-color: #FFFFFF;
+}

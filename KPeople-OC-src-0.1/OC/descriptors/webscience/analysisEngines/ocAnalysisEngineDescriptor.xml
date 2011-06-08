@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+  <primitive>false</primitive>
+  <delegateAnalysisEngineSpecifiers>
+    <delegateAnalysisEngine key="ActionAnnotator">
+      <import location="../annotators/ActionAnnotator.xml"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="OcSolrAnnotator">
+      <import location="../annotators/solr/OcSolrAnnotator.xml"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="HpmAnnotator">
+      <import location="../annotators/HpmAnnotator.xml"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="OcLdapAnnotator">
+      <import location="../annotators/OcLdapAnnotator.xml"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="DateAnnotator">
+      <import location="../annotators/DateAnnotator.xml"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="ocSesameCasConsumer">
+      <import location="../casConsumers/ocSesameCasConsumer.xml"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="EventDataAnnotator">
+      <import location="../annotators/EventDataAnnotator.xml"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="OcStorageAnnotator">
+      <import location="../annotators/OcStorageAnnotator.xml"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="TikaAnnotator">
+      <import location="../annotators/TikaAnnotator.xml"/>
+    </delegateAnalysisEngine>
+  </delegateAnalysisEngineSpecifiers>
+  <analysisEngineMetaData>
+    <name>ocAnalysisEngineDescriptor</name>
+    <description/>
+    <version>1.0</version>
+    <vendor/>
+    <configurationParameters/>
+    <configurationParameterSettings/>
+    <flowConstraints>
+      <fixedFlow>
+        <node>ActionAnnotator</node>
+        <node>EventDataAnnotator</node>
+        <node>DateAnnotator</node>
+        <node>OcStorageAnnotator</node>
+        <node>OcLdapAnnotator</node>
+        <node>TikaAnnotator</node>
+        <node>OcSolrAnnotator</node>
+        <node>HpmAnnotator</node>
+        <node>ocSesameCasConsumer</node>
+      </fixedFlow>
+    </flowConstraints>
+    <fsIndexCollection/>
+    <capabilities>
+      <capability>
+        <inputs/>
+        <outputs/>
+        <languagesSupported/>
+      </capability>
+    </capabilities>
+    <operationalProperties>
+      <modifiesCas>true</modifiesCas>
+      <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+      <outputsNewCASes>false</outputsNewCASes>
+    </operationalProperties>
+  </analysisEngineMetaData>
+  <resourceManagerConfiguration/>
+</analysisEngineDescription>

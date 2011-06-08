@@ -1,0 +1,6 @@
+<service name="GetAdapterConfigurationService">
+    <description>
+        This service get an adapter configuration service.
+    </description>
+    <parameter name="ServiceClass" locked="true">it.webscience.kpeople.ega.core.configurationService.remoteControlService.AdapterConfigurationWS</parameter>
+</service>

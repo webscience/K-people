@@ -1,0 +1,10 @@
+<sequence xmlns="http://ws.apache.org/ns/synapse" name="ProcessMetadataServiceSequence" trace="enable">
+   <in>
+      <send>
+         <endpoint key="ProcessMetadataService" />
+      </send>
+   </in>
+   <out>
+      <send />
+   </out>
+</sequence>

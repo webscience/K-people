@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Eclipse-LazyStart: false
+Bundle-Version: 1.0.0
+Bundle-Name: it.webscience.kpeople.ega.adapter.actionListener
+Bundle-Activator: it.webscience.kpeople.ega.adapter.actionListener.EgaAdapterActivator
+Bundle-ManifestVersion: 2
+Carbon-Component: UIBundle
+Import-Package: it.webscience.kpeople.domain.service.interf,
+ it.webscience.kpeople.logging.serviceInterface,
+ org.apache.axis2,
+ org.apache.axis2.context,
+ org.osgi.framework;version="1.3.0"
+Bundle-SymbolicName: it.webscience.kpeople.ega.adapter.actionListener
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Require-Bundle: it.webscience.kpeople.ega.core;bundle-version="1.0.0",
+ it.webscience.kpeople.domain;bundle-version="1.0.0"
+

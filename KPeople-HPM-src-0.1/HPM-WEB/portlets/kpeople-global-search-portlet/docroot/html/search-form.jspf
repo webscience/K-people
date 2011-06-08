@@ -1,0 +1,39 @@
+<%
+int risultatiPerPagina = 4;
+
+GlobalSearch searchContainer = new GlobalSearch(renderRequest, portletURL);
+GlobalSearchDisplayTerms displayTerms = (GlobalSearchDisplayTerms)searchContainer.getDisplayTerms();
+
+searchContainer.setDelta(risultatiPerPagina);
+searchContainer.setDeltaConfigurable(false);
+searchContainer.setOrderByCol("");
+searchContainer.setOrderByType("");
+
+String keywords_defaults = LanguageUtil.get(pageContext, "global-search.search-in-documents");
+
+String keywords = keywords_defaults;
+String search_box_class = "gray-text";
+
+if (displayTerms != null) {
+	if (Validator.isNotNull(displayTerms.getFreeText())) {
+		keywords = displayTerms.getFreeText();
+		search_box_class = "";
+	}
+}
+%>
+
+<form id="<portlet:namespace/>fm" name="<portlet:namespace/>fm" action="<%= portletURL.toString() %>" method="POST">
+    <div style="float: left;">
+        <input type="text" class="<%= search_box_class %>" 
+               onfocus="if (this.value == '<%= keywords_defaults %>') { this.className = ''; this.value = ''; }" 
+               onblur="if (this.value == '') {$("#<portlet:namespace/><%=GlobalSearchDisplayTerms.EMPTY_FREE_TEXT %>").val('f'); $("#<portlet:namespace/><%=GlobalSearchDisplayTerms.EMPTY_FREE_TEXT %>").css({opacity: 0.5});   this.value = '<%= keywords_defaults %>'; this.className = 'gray-text';} else {$("#<portlet:namespace/><%=GlobalSearchDisplayTerms.EMPTY_FREE_TEXT %>").val('t'); $("#<portlet:namespace/><%=GlobalSearchDisplayTerms.EMPTY_FREE_TEXT %>").css({opacity: 1});"
+               value="<%= HtmlUtil.escapeAttribute(keywords) %>" 
+               name="<portlet:namespace/><%=GlobalSearchDisplayTerms.FREE_TEXT %>" 
+               id="<portlet:namespace/><%=GlobalSearchDisplayTerms.FREE_TEXT %>"/>
+    </div>
+    
+
+    
+    <div class="smplSubmit" onclick ="<portlet:namespace/>fm.submit();"></div>
+    <div style="clear:both"></div>
+</form>

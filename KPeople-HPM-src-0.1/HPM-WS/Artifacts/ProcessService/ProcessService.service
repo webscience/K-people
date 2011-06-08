@@ -1,0 +1,6 @@
+#Contains the information about the axis2 service generation information from the eclipse workspace
+#Tue Jan 18 16:41:22 CET 2011
+Class-name=it.webscience.kpeople.service.process.ProcessService
+Type=FROM_CLASS
+Service-name=ProcessServiceV1
+Projects=CarbonApp

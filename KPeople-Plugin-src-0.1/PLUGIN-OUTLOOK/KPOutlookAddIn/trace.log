@@ -1,0 +1,3637 @@
+----------------------------------------
+Timestamp: 29/11/2010 16.12.24
+
+Message: System.InvalidOperationException: Could not find endpoint element with name '' and contract 'MetadataSetService.getMetadataSetPortType' in the ServiceModel client configuration section. This might be because no configuration file was found for your application, or because no endpoint element matching this name could be found in the client element.
+   in System.ServiceModel.Description.ConfigLoader.LoadChannelBehaviors(ServiceEndpoint serviceEndpoint, String configurationName)
+   in System.ServiceModel.ChannelFactory.ApplyConfiguration(String configurationName)
+   in System.ServiceModel.ChannelFactory.InitializeEndpoint(String configurationName, EndpointAddress address)
+   in System.ServiceModel.ChannelFactory`1..ctor(String endpointConfigurationName, EndpointAddress remoteAddress)
+   in System.ServiceModel.EndpointTrait`1.CreateSimplexFactory()
+   in System.ServiceModel.EndpointTrait`1.CreateChannelFactory()
+   in System.ServiceModel.ClientBase`1.CreateChannelFactoryRef(EndpointTrait`1 endpointTrait)
+   in System.ServiceModel.ClientBase`1.InitializeChannelFactoryRef()
+   in System.ServiceModel.ClientBase`1..ctor(String endpointConfigurationName)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient..ctor(String endpointConfigurationName) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 194
+   in KPOutlookAddIn.ThisAddIn.Inspectors_NewInspector(Inspector Inspector) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 75
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4864
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:5028
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 02/12/2010 8.54.04
+
+Message: System.ServiceModel.EndpointNotFoundException: Could not connect to http://localhost:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. TCP error code 10061: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 3096
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:360
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 02/12/2010 8.56.29
+
+Message: System.ServiceModel.EndpointNotFoundException: Could not connect to http://localhost:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. TCP error code 10061: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 5088
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:5100
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 02/12/2010 8.57.48
+
+Message: System.ServiceModel.EndpointNotFoundException: Could not connect to http://localhost:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. TCP error code 10061: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4840
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4844
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 02/12/2010 8.59.43
+
+Message: System.ServiceModel.EndpointNotFoundException: Could not connect to http://localhost:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. TCP error code 10061: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 5216
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:5220
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 02/12/2010 9.01.16
+
+Message: System.ServiceModel.EndpointNotFoundException: Could not connect to http://localhost:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. TCP error code 10061: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4972
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:1040
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 02/12/2010 9.04.06
+
+Message: System.ServiceModel.EndpointNotFoundException: Could not connect to http://localhost:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. TCP error code 10061: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 5336
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:6032
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 02/12/2010 9.04.49
+
+Message: System.ServiceModel.EndpointNotFoundException: Could not connect to http://localhost:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. TCP error code 10061: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4616
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4620
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 02/12/2010 9.07.15
+
+Message: System.ServiceModel.EndpointNotFoundException: Could not connect to http://localhost:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. TCP error code 10061: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 2368
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:3700
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 02/12/2010 9.07.45
+
+Message: System.ServiceModel.EndpointNotFoundException: Could not connect to http://localhost:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. TCP error code 10061: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 5912
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:6052
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 02/12/2010 9.27.49
+
+Message: System.ServiceModel.EndpointNotFoundException: Could not connect to http://localhost:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. TCP error code 10061: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 5488
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:5888
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 02/12/2010 9.45.26
+
+Message: System.ServiceModel.EndpointNotFoundException: Could not connect to http://localhost:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. TCP error code 10061: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4848
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:5652
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 02/12/2010 9.51.07
+
+Message: System.ServiceModel.EndpointNotFoundException: Could not connect to http://localhost:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. TCP error code 10061: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 5536
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:3112
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 02/12/2010 9.53.45
+
+Message: System.ServiceModel.EndpointNotFoundException: Could not connect to http://localhost:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. TCP error code 10061: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 5720
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4376
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 13/12/2010 9.29.50
+
+Message: System.ServiceModel.EndpointNotFoundException: Could not connect to http://localhost:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. TCP error code 10061: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 5956
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:2312
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 15/12/2010 9.56.45
+
+Message: System.Runtime.InteropServices.COMException (0x80020009): Indice della matrice fuori intervallo.
+   in Microsoft.Office.Interop.Outlook.Attachments.get_Item(Object Index)
+   in KPOutlookAddIn.ThisAddIn.FlagKpeopleMail(Object item) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 250
+
+Category: General
+
+Priority: 1
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4988
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:2360
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 15/12/2010 11.15.14
+
+Message: System.Runtime.InteropServices.COMException (0x80020009): Indice della matrice fuori intervallo.
+   in Microsoft.Office.Interop.Outlook.Attachments.get_Item(Object Index)
+   in KPOutlookAddIn.ThisAddIn.FlagKpeopleMail(Object item) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 250
+
+Category: General
+
+Priority: 1
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 2860
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4604
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 15/12/2010 11.16.06
+
+Message: System.Runtime.InteropServices.COMException (0x80020009): Indice della matrice fuori intervallo.
+   in Microsoft.Office.Interop.Outlook.Attachments.get_Item(Object Index)
+   in KPOutlookAddIn.ThisAddIn.FlagKpeopleMail(Object item) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 250
+
+Category: General
+
+Priority: 1
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4520
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:5616
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 15/12/2010 11.28.10
+
+Message: System.Runtime.InteropServices.COMException (0x80020009): Indice della matrice fuori intervallo.
+   in Microsoft.Office.Interop.Outlook.Attachments.get_Item(Object Index)
+   in KPOutlookAddIn.ThisAddIn.FlagKpeopleMail(Object item) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 250
+
+Category: General
+
+Priority: 1
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 5592
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:5648
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 15/12/2010 11.32.36
+
+Message: System.Runtime.InteropServices.COMException (0x80020009): Indice della matrice fuori intervallo.
+   in Microsoft.Office.Interop.Outlook.Attachments.get_Item(Object Index)
+   in KPOutlookAddIn.ThisAddIn.FlagKpeopleMail(Object item) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 250
+
+Category: General
+
+Priority: 1
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4536
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:6008
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 15/12/2010 11.33.52
+
+Message: System.Runtime.InteropServices.COMException (0x80020009): Indice della matrice fuori intervallo.
+   in Microsoft.Office.Interop.Outlook.Attachments.get_Item(Object Index)
+   in KPOutlookAddIn.ThisAddIn.FlagKpeopleMail(Object item) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 250
+
+Category: General
+
+Priority: 1
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 5272
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:5792
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 15/12/2010 12.05.03
+
+Message: System.Runtime.InteropServices.COMException (0x80020009): Indice della matrice fuori intervallo.
+   in Microsoft.Office.Interop.Outlook.Attachments.get_Item(Object Index)
+   in KPOutlookAddIn.ThisAddIn.FlagKpeopleMail(Object item) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 250
+
+Category: General
+
+Priority: 1
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 2104
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:5688
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 15/12/2010 12.10.18
+
+Message: System.Runtime.InteropServices.COMException (0x80020009): Indice della matrice fuori intervallo.
+   in Microsoft.Office.Interop.Outlook.Attachments.get_Item(Object Index)
+   in KPOutlookAddIn.ThisAddIn.FlagKpeopleMail(Object item) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 250
+
+Category: General
+
+Priority: 1
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 6036
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4800
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 15/12/2010 12.11.15
+
+Message: System.Runtime.InteropServices.COMException (0x80020009): Indice della matrice fuori intervallo.
+   in Microsoft.Office.Interop.Outlook.Attachments.get_Item(Object Index)
+   in KPOutlookAddIn.ThisAddIn.FlagKpeopleMail(Object item) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 250
+
+Category: General
+
+Priority: 1
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 3936
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:5096
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 15/12/2010 14.14.58
+
+Message: System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in KPOutlookAddIn.ThisAddIn.FlagKpeopleMail(Object item) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 250
+
+Category: General
+
+Priority: 1
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 5560
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:5416
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 9.07.56
+
+Message: System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in KPOutlookAddIn.ThisAddIn.FlagKpeopleMail(Object item) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 252
+
+Category: General
+
+Priority: 1
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4208
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4912
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 9.08.15
+
+Message: System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in KPOutlookAddIn.ThisAddIn.FlagKpeopleMail(Object item) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 252
+
+Category: General
+
+Priority: 1
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4208
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4912
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 9.08.15
+
+Message: System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in KPOutlookAddIn.ThisAddIn.FlagKpeopleMail(Object item) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 252
+
+Category: General
+
+Priority: 1
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4208
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4912
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 9.08.15
+
+Message: System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in KPOutlookAddIn.ThisAddIn.FlagKpeopleMail(Object item) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 252
+
+Category: General
+
+Priority: 1
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4208
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4912
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 9.08.15
+
+Message: System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in KPOutlookAddIn.ThisAddIn.FlagKpeopleMail(Object item) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 252
+
+Category: General
+
+Priority: 1
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4208
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4912
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 9.08.15
+
+Message: System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in KPOutlookAddIn.ThisAddIn.FlagKpeopleMail(Object item) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 252
+
+Category: General
+
+Priority: 1
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4208
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4912
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 9.08.15
+
+Message: System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in KPOutlookAddIn.ThisAddIn.FlagKpeopleMail(Object item) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 252
+
+Category: General
+
+Priority: 1
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4208
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4912
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 9.08.15
+
+Message: System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in KPOutlookAddIn.ThisAddIn.FlagKpeopleMail(Object item) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 252
+
+Category: General
+
+Priority: 1
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4208
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4912
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 9.18.39
+
+Message: System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in KPOutlookAddIn.ThisAddIn.FlagKpeopleMail(Object item) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 252
+
+Category: General
+
+Priority: 1
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4208
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4912
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 9.18.45
+
+Message: System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in KPOutlookAddIn.ThisAddIn.FlagKpeopleMail(Object item) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 252
+
+Category: General
+
+Priority: 1
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4208
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4912
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 9.18.45
+
+Message: System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in KPOutlookAddIn.ThisAddIn.FlagKpeopleMail(Object item) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 252
+
+Category: General
+
+Priority: 1
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4208
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4912
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 9.18.45
+
+Message: System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in KPOutlookAddIn.ThisAddIn.FlagKpeopleMail(Object item) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 252
+
+Category: General
+
+Priority: 1
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4208
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4912
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 9.33.41
+
+Message: System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in KPOutlookAddIn.ThisAddIn.FlagKpeopleMail(Object item) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 252
+
+Category: General
+
+Priority: 1
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4208
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4912
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 9.33.48
+
+Message: System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in KPOutlookAddIn.ThisAddIn.FlagKpeopleMail(Object item) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 252
+
+Category: General
+
+Priority: 1
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4208
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4912
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 10.03.46
+
+Message: System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in KPOutlookAddIn.ThisAddIn.FlagKpeopleMail(Object item) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 252
+
+Category: General
+
+Priority: 1
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4208
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4912
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 10.04.03
+
+Message: System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in KPOutlookAddIn.ThisAddIn.FlagKpeopleMail(Object item) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 252
+
+Category: General
+
+Priority: 1
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4208
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4912
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 10.18.48
+
+Message: System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in KPOutlookAddIn.ThisAddIn.FlagKpeopleMail(Object item) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 252
+
+Category: General
+
+Priority: 1
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4208
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4912
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 10.18.55
+
+Message: System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in KPOutlookAddIn.ThisAddIn.FlagKpeopleMail(Object item) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 252
+
+Category: General
+
+Priority: 1
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4208
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4912
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 10.18.55
+
+Message: System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in KPOutlookAddIn.ThisAddIn.FlagKpeopleMail(Object item) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 252
+
+Category: General
+
+Priority: 1
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4208
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4912
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 10.18.55
+
+Message: System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in KPOutlookAddIn.ThisAddIn.FlagKpeopleMail(Object item) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 252
+
+Category: General
+
+Priority: 1
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4208
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4912
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 12.49.10
+
+Message: System.ServiceModel.CommunicationException: The server did not provide a meaningful reply; this might be caused by a contract mismatch, a premature session shutdown or an internal server error.
+
+Server stack trace: 
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4208
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4912
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 12.49.10
+
+Message: System.ServiceModel.CommunicationException: The server did not provide a meaningful reply; this might be caused by a contract mismatch, a premature session shutdown or an internal server error.
+
+Server stack trace: 
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.plugincore.Cachemanager.getAvailableMetadataSet() in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\plugincore\Cachemanager.cs:riga 70
+   in KPOutlookAddIn.ThisAddIn.Inspectors_NewInspector(Inspector Inspector) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 110
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4208
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4912
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 12.49.38
+
+Message: System.ServiceModel.CommunicationException: The server did not provide a meaningful reply; this might be caused by a contract mismatch, a premature session shutdown or an internal server error.
+
+Server stack trace: 
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 1524
+
+Process Name: C:\Programmi\Microsoft Office\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4136
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 12.49.38
+
+Message: System.ServiceModel.CommunicationException: The server did not provide a meaningful reply; this might be caused by a contract mismatch, a premature session shutdown or an internal server error.
+
+Server stack trace: 
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.plugincore.Cachemanager.getAvailableMetadataSet() in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\plugincore\Cachemanager.cs:riga 70
+   in KPOutlookAddIn.ThisAddIn.Inspectors_NewInspector(Inspector Inspector) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 110
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 1524
+
+Process Name: C:\Programmi\Microsoft Office\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4136
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 12.49.45
+
+Message: System.ServiceModel.CommunicationException: The server did not provide a meaningful reply; this might be caused by a contract mismatch, a premature session shutdown or an internal server error.
+
+Server stack trace: 
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 1524
+
+Process Name: C:\Programmi\Microsoft Office\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4136
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 12.49.45
+
+Message: System.ServiceModel.CommunicationException: The server did not provide a meaningful reply; this might be caused by a contract mismatch, a premature session shutdown or an internal server error.
+
+Server stack trace: 
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.plugincore.Cachemanager.getAvailableMetadataSet() in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\plugincore\Cachemanager.cs:riga 70
+   in KPOutlookAddIn.ThisAddIn.Inspectors_NewInspector(Inspector Inspector) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 110
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 1524
+
+Process Name: C:\Programmi\Microsoft Office\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4136
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 12.50.38
+
+Message: System.ServiceModel.CommunicationException: The server did not provide a meaningful reply; this might be caused by a contract mismatch, a premature session shutdown or an internal server error.
+
+Server stack trace: 
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 2592
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4076
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 12.50.38
+
+Message: System.ServiceModel.CommunicationException: The server did not provide a meaningful reply; this might be caused by a contract mismatch, a premature session shutdown or an internal server error.
+
+Server stack trace: 
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.plugincore.Cachemanager.getAvailableMetadataSet() in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\plugincore\Cachemanager.cs:riga 70
+   in KPOutlookAddIn.ThisAddIn.Inspectors_NewInspector(Inspector Inspector) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 110
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 2592
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4076
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 13.15.54
+
+Message: System.ServiceModel.EndpointNotFoundException: Could not connect to http://localhost:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. TCP error code 10061: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 2592
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4076
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 13.15.54
+
+Message: System.ServiceModel.EndpointNotFoundException: Could not connect to http://localhost:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. TCP error code 10061: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.plugincore.Cachemanager.getAvailableMetadataSet() in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\plugincore\Cachemanager.cs:riga 70
+   in KPOutlookAddIn.ThisAddIn.Inspectors_NewInspector(Inspector Inspector) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 110
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 2592
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4076
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 13.16.35
+
+Message: System.ServiceModel.EndpointNotFoundException: Could not connect to http://localhost:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. TCP error code 10061: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 2592
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4076
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 13.16.35
+
+Message: System.ServiceModel.EndpointNotFoundException: Could not connect to http://localhost:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. TCP error code 10061: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.plugincore.Cachemanager.getAvailableMetadataSet() in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\plugincore\Cachemanager.cs:riga 70
+   in KPOutlookAddIn.ThisAddIn.Inspectors_NewInspector(Inspector Inspector) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 110
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 2592
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4076
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 13.25.46
+
+Message: System.ServiceModel.EndpointNotFoundException: Could not connect to http://localhost:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. TCP error code 10061: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 2592
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4076
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 13.25.46
+
+Message: System.ServiceModel.EndpointNotFoundException: Could not connect to http://localhost:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. TCP error code 10061: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.plugincore.Cachemanager.getAvailableMetadataSet() in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\plugincore\Cachemanager.cs:riga 70
+   in KPOutlookAddIn.ThisAddIn.Inspectors_NewInspector(Inspector Inspector) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 110
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 2592
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:4076
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 13.54.32
+
+Message: System.ServiceModel.EndpointNotFoundException: Could not connect to http://localhost:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. TCP error code 10061: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4704
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:5568
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 13.54.32
+
+Message: System.ServiceModel.EndpointNotFoundException: Could not connect to http://localhost:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. TCP error code 10061: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.plugincore.Cachemanager.getAvailableMetadataSet() in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\plugincore\Cachemanager.cs:riga 70
+   in KPOutlookAddIn.ThisAddIn.Inspectors_NewInspector(Inspector Inspector) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 110
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4704
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:5568
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 13.57.56
+
+Message: System.ServiceModel.EndpointNotFoundException: Could not connect to http://localhost:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. TCP error code 10061: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4704
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:5568
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 13.57.56
+
+Message: System.ServiceModel.EndpointNotFoundException: Could not connect to http://localhost:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. TCP error code 10061: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione 127.0.0.1:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.plugincore.Cachemanager.getAvailableMetadataSet() in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\plugincore\Cachemanager.cs:riga 70
+   in KPOutlookAddIn.ThisAddIn.Inspectors_NewInspector(Inspector Inspector) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 110
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4704
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:5568
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 14.01.17
+
+Message: System.ServiceModel.CommunicationException: The server did not provide a meaningful reply; this might be caused by a contract mismatch, a premature session shutdown or an internal server error.
+
+Server stack trace: 
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4704
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:5568
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 16/12/2010 14.01.17
+
+Message: System.ServiceModel.CommunicationException: The server did not provide a meaningful reply; this might be caused by a contract mismatch, a premature session shutdown or an internal server error.
+
+Server stack trace: 
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.plugincore.Cachemanager.getAvailableMetadataSet() in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\plugincore\Cachemanager.cs:riga 70
+   in KPOutlookAddIn.ThisAddIn.Inspectors_NewInspector(Inspector Inspector) in C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\ThisAddIn.cs:riga 110
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: TITANIA
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 4704
+
+Process Name: C:\PROGRA~1\MICROS~2\Office12\OUTLOOK.EXE
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:5568
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 31/12/2010 14.14.52
+
+Message: System.ServiceModel.EndpointNotFoundException: Impossibile connettersi a http://192.168.0.86:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. Codice di errore TCP 10060: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.86:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.86:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: BECK-C4743D2F13
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 2908
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:1584
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 31/12/2010 14.14.52
+
+Message: System.ServiceModel.EndpointNotFoundException: Impossibile connettersi a http://192.168.0.86:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. Codice di errore TCP 10060: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.86:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.86:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.plugincore.Cachemanager.getAvailableMetadataSet() in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\plugincore\Cachemanager.cs:riga 70
+   in KPOutlookAddIn.Ribbon.kpeopleBtn_Click(IRibbonControl control) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\Ribbon.cs:riga 63
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: BECK-C4743D2F13
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 2908
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:1584
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 31/12/2010 14.20.18
+
+Message: System.ServiceModel.EndpointNotFoundException: Impossibile connettersi a http://192.168.0.86:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. Codice di errore TCP 10060: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.86:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.86:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: BECK-C4743D2F13
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 2068
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:3916
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 31/12/2010 14.21.20
+
+Message: System.ServiceModel.EndpointNotFoundException: Impossibile connettersi a http://192.168.0.86:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. Codice di errore TCP 10060: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.86:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.86:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.plugincore.Cachemanager.getAvailableMetadataSet() in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\plugincore\Cachemanager.cs:riga 70
+   in KPOutlookAddIn.Ribbon.kpeopleBtn_Click(IRibbonControl control) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\Ribbon.cs:riga 63
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: BECK-C4743D2F13
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 2068
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:3916
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 31/12/2010 14.23.08
+
+Message: System.ServiceModel.EndpointNotFoundException: Impossibile connettersi a http://192.168.0.86:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. Codice di errore TCP 10060: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.86:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.86:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: BECK-C4743D2F13
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 3888
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:1144
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 31/12/2010 14.23.11
+
+Message: System.ServiceModel.EndpointNotFoundException: Impossibile connettersi a http://192.168.0.86:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. Codice di errore TCP 10060: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.86:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.86:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.plugincore.Cachemanager.getAvailableMetadataSet() in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\plugincore\Cachemanager.cs:riga 70
+   in KPOutlookAddIn.Ribbon.kpeopleBtn_Click(IRibbonControl control) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\Ribbon.cs:riga 63
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: BECK-C4743D2F13
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 3888
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:1144
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 31/12/2010 14.25.29
+
+Message: System.ServiceModel.EndpointNotFoundException: Impossibile connettersi a http://192.168.0.86:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. Codice di errore TCP 10060: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.86:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.86:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: BECK-C4743D2F13
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 2148
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:288
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 31/12/2010 14.31.18
+
+Message: System.NullReferenceException: Riferimento a un oggetto non impostato su un'istanza di oggetto.
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.plugincore.Cachemanager.getAvailableMetadataSet() in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\plugincore\Cachemanager.cs:riga 70
+   in KPOutlookAddIn.Ribbon.kpeopleBtn_Click(IRibbonControl control) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\Ribbon.cs:riga 63
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: BECK-C4743D2F13
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 2148
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:288
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 31/12/2010 15.43.06
+
+Message: System.ServiceModel.EndpointNotFoundException: Impossibile connettersi a http://192.168.0.86:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. Codice di errore TCP 10060: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.86:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.86:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: BECK-C4743D2F13
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 3764
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:3860
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 31/12/2010 15.44.10
+
+Message: System.ServiceModel.EndpointNotFoundException: Impossibile connettersi a http://192.168.0.86:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. Codice di errore TCP 10060: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.86:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.86:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: BECK-C4743D2F13
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 3628
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:2600
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 31/12/2010 15.45.57
+
+Message: System.ServiceModel.EndpointNotFoundException: Impossibile connettersi a http://192.168.0.86:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. Codice di errore TCP 10060: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.86:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.86:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: BECK-C4743D2F13
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 956
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:2692
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 03/01/2011 15.25.52
+
+Message: System.ServiceModel.EndpointNotFoundException: Impossibile connettersi a http://192.168.0.86:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. Codice di errore TCP 10060: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.86:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.86:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: BECK-C4743D2F13
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 1556
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:2920
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 03/01/2011 16.36.47
+
+Message: System.ServiceModel.EndpointNotFoundException: Impossibile connettersi a http://192.168.0.86:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. Codice di errore TCP 10060: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.86:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.86:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: BECK-C4743D2F13
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 2308
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:3864
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 04/01/2011 14.52.20
+
+Message: System.ServiceModel.EndpointNotFoundException: Impossibile connettersi a http://192.168.0.100:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. Codice di errore TCP 10060: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.100:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.100:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: BECK-C4743D2F13
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 3056
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:3176
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 04/01/2011 17.12.37
+
+Message: System.ServiceModel.EndpointNotFoundException: Impossibile connettersi a http://192.168.0.100:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. Codice di errore TCP 10060: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.100:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.100:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 30
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: BECK-C4743D2F13
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 3888
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:3308
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 11/01/2011 12.33.47
+
+Message: System.ServiceModel.EndpointNotFoundException: Impossibile connettersi a http://192.168.0.100:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. Codice di errore TCP 10060: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.100:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.100:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 39
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: BECK-C4743D2F13
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 2236
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:3168
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 11/01/2011 12.34.48
+
+Message: System.ServiceModel.EndpointNotFoundException: Impossibile connettersi a http://192.168.0.100:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. Codice di errore TCP 10060: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.100:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.100:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 212
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\Service References\MetadataSetService\Reference.cs:riga 218
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username) in C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\it.webscience.kpeople.pluginoutlook\pluginsystemintegrator\ConnectionManager.cs:riga 39
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: BECK-C4743D2F13
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 3008
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:3112
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 11/01/2011 13.24.58
+
+Message: System.ServiceModel.EndpointNotFoundException: Impossibile connettersi a http://192.168.0.100:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/. Codice di errore TCP 10060: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.100:9763.  ---> System.Net.WebException: Impossibile effettuare la connessione al server remoto. ---> System.Net.Sockets.SocketException: Impossibile stabilire la connessione. Risposta non corretta della parte connessa dopo l'intervallo di tempo oppure mancata risposta dall'host collegato 192.168.0.100:9763
+   in System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   in System.Net.Sockets.Socket.InternalConnect(EndPoint remoteEP)
+   in System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Int32 timeout, Exception& exception)
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+   in System.Net.HttpWebRequest.GetRequestStream()
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   --- Fine dell'analisi dello stack dell'eccezione interna ---
+
+Server stack trace: 
+   in System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   in System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   in System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   in System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   in System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   in System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   in System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   in System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.KPOutlookAddIn.MetadataSetService.getMetadataSetPortType.metadataSet(metadataSetRequest request)
+   in KPOutlookAddIn.MetadataSetService.getMetadataSetPortTypeClient.metadataSet(String username)
+   in KPOutlookAddIn.it.webscience.kpeople.pluginoutlook.pluginsystemintegrator.ConnectionManager.retriveAvailableMetadataSetXml(String username)
+
+Category: General
+
+Priority: 2
+
+EventId: 100
+
+Severity: Information
+
+Title:
+
+Machine: BECK-C4743D2F13
+
+App Domain: KPOutlookAddIn.vsto
+
+ProcessId: 2328
+
+Process Name: C:\Programmi\Microsoft Office\Office12\outlook.exe
+
+Thread Name: VSTA_Main
+
+Win32 ThreadId:1392
+
+Extended Properties: 
+----------------------------------------

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<event xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="mailserver.POSTFIX.1234-2031-2010-10-19 20:27:16.0">
+  <action>
+    <action-type>COMMUNICATION</action-type>
+    <action-reference type="url">smb://192.168.0.47/shared/pippo.pluto/new/1287513083.V801I87199M131843.postfix.kpeople</action-reference>
+    <system>
+      <system-id>mailserver.POSTFIX.1234</system-id>
+      <system-type>mailserver</system-type>
+    </system>
+  </action>
+  <event-data>
+    <creation-date>2010-10-19T20:26:15.0Z</creation-date>
+    <title>multidestinatario</title>
+    <author>
+      <email>pippo.pluto@kpeople.webscience.it</email>
+    </author>
+    <body type="html">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"&gt; &lt;html&gt; &lt;head&gt; &lt;meta http-equiv="content-type" content="text/html; charset=ISO-8859-15"&gt; &lt;/head&gt; &lt;body bgcolor="#ffffff" text="#000000"&gt; &lt;font size="-1"&gt;contenuto multidestinatario&lt;br&gt; &lt;/font&gt; &lt;/body&gt; &lt;/html&gt;</body>
+    <details>
+      &lt;?xml version="1.0" encoding="UTF-8"?&gt; 
+      &lt;email-details&gt;
+         &lt;receivers&gt;
+           &lt;receiver-to&gt;pippo.pluto@kpeople.webscience.it&lt;/receiver-to&gt;
+           &lt;receiver-to&gt;pippo.pluto@kpeople.webscience.it&lt;/receiver-to&gt;
+           &lt;receiver-cc&gt;pippo.pluto@kpeople.webscience.it&lt;/receiver-cc&gt;
+         &lt;/receivers&gt;
+      &lt;/email-details&gt;
+    </details>
+	 <attachments>
+      <attachment id="2027-56a452">
+        <attachment-type>text/xml</attachment-type>
+        <attachment-data>C:\EgaWork\event\instance0.xml</attachment-data>
+        <attachment-name>instance0.xml</attachment-name>
+        <hashcode>56a45258098d50e584553097338eb6529858304a01253acc4d85cc48fd89a5e39a7a67a489887f640fda0c6f7017319e5f81d83ef6622f0e8c6255e137073021</hashcode>
+      </attachment>
+      <attachment id="2027-4ccb56">
+        <attachment-type>text/xml</attachment-type>
+        <attachment-data>C:\EgaWork\event\kpeople-event_v03.xsd</attachment-data>
+        <attachment-name>kpeople-event_v03.xsd</attachment-name>
+        <hashcode>4ccb56ecfa7b8e4ed01675f9ac5fba601a8fa42a72191d5f6e2cebb3e18ceeb3d181236bc401d686031eb2c8177f029e2f41aa16d9ff3344d7d60d810d09b22a</hashcode>
+      </attachment>
+    </attachments>
+  </event-data>
+</event>

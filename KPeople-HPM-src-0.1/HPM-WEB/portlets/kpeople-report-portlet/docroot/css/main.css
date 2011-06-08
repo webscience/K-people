@@ -1,0 +1,66 @@
+.portlet-configuration fieldset {
+	margin-bottom: 5px;
+}
+
+
+.report .actContainerTop {
+    background: url("../images/docs_open.png") repeat scroll 0 0 transparent;
+    height: 18px;
+    position: relative;
+    width: 321px;
+}
+
+.report .actContainerRpt {
+    background: url("../images/docs_rpt.png") repeat scroll 0 0 transparent;
+    padding: 13px 0 6px 14px;
+    width: 307px;
+    height: 210px;
+    overflow: hidden;
+}
+
+.report .actContainerBottom {
+    background: url("../images/docs_close.png") repeat scroll 0 0 transparent;
+    height: 18px;
+    width: 321px;
+}
+
+.report .actContainerTop_big {
+    background: url("../images/top.png") repeat scroll 0 0 transparent;
+    height: 18px;
+    position: relative;
+    width: 99%;
+}
+
+.report .actContainerRpt_big {
+    background: url("../images/middle.png") repeat scroll 0 0 transparent;
+    padding: 13px 13px 13px 13px;
+    width: 96%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.report .actContainerBottom_big {
+    background: url("../images/bottom.png") repeat scroll 0 0 transparent;
+    height: 18px;
+    width: 99%;
+}
+
+.report .reportFilter {
+	float: left;
+    padding-bottom: 15px;
+    padding-left: 20px;
+      width: 420px;
+}
+.report .reportFilter select{
+
+	 width: 280px;
+}
+
+.report .reportFilter .report_radio{
+	float: left;
+	width: 120px;
+}
+
+.report .reportFilter .report_select{
+	float: left;
+}

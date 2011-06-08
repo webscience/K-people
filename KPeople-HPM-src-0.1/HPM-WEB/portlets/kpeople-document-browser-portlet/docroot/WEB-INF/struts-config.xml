@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+	<action-mappings>
+		<action path="/document-browser/begin-search" type="it.webscience.kpeople.web.portlet.document.action.SearchAction">
+			<forward name="/document-browser/documentsPerProcess" path="/html/documentsPerProcess.jsp" />
+		</action>	
+	
+		<action path="/document-browser/view" type="it.webscience.kpeople.web.portlet.document.action.ViewAction">
+			<forward name="/document-browser/view" path="/html/view.jsp" />
+		</action>
+		
+		<action path="/document-browser/edit" type="it.webscience.kpeople.web.portlet.document.action.EditAction">
+			<forward name="/document-browser/success" path="/html/view.jsp" />
+			<forward name="/document-browser/fail" path="/html/view.jsp" />
+		</action>
+	</action-mappings>
+
+</struts-config>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Properties>
+    <Property Key="columnGroup" Value ="Group Column 3"/>
+    <Property Key="columnName" Value="Process"/>
+    <Property Key="username" Value="pippo"/>
+    <Property Key="numberSeconds" Value="180000"/>
+  </Properties> 
+</Feature>

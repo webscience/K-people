@@ -1,0 +1,6 @@
+<webscript>
+  <shortname>Ontology controller - Store event</shortname>
+  <description></description>
+  <url>/oc/store_event</url>
+  <format default="html" />
+</webscript>

@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+
+<project name="kpeople-custom-modules-ext" basedir="." default="direct-deploy">
+	<import file="../build-common-ext.xml" />
+</project>

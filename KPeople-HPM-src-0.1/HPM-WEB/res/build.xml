@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<project name="res" basedir="." default="deploy" xmlns:antelope="antlib:ise.antelope.tasks">
+	<property name="project.dir" value=".." />
+
+	<import file="../build-common.xml" />
+	
+	<target name="clean">
+		<delete file="${app.server.classes.portal.dir}/portal-ext.properties" />
+	</target>
+	
+	<target name="deploy">
+		<copy todir="${app.server.classes.portal.dir}" file="portal-ext.properties" overwrite="true"></copy>
+	</target>
+	
+	<target name="direct-deploy">
+		<antcall target="deploy"/>
+	</target>
+</project>

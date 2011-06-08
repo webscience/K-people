@@ -1,0 +1,116 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>it.webscience.kpeople.epe.mediators</groupId>
+  <artifactId>it.webscience.kpeople.epe.mediators.eventlogger</artifactId>
+  <version>1.0.0</version>
+  <packaging>bundle</packaging>
+
+  <name>it.webscience.kpeople.epe.mediators.eventlogger</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <build>
+	  <plugins>
+	    <plugin>
+	      <groupId>org.apache.felix</groupId>
+	      <artifactId>maven-bundle-plugin</artifactId>
+	      <version>1.4.0</version>
+	      <extensions>true</extensions>
+	      <configuration>
+	        <instructions>
+	          <Bundle-SymbolicName>${pom.artifactId}</Bundle-SymbolicName>
+	          <Bundle-Name>${pom.name}</Bundle-Name>
+	          <Import-Package>org.osgi.framework.*,
+	          it.webscience.kpeople.epe.mediators.eventlogger.*,
+	          org.apache.axiom.*,
+	          org.apache.axiom.om.*,
+	          org.apache.axiom.soap.*,
+	          org.apache.synapse.*,
+	          org.apache.synapse.config.xml.*,
+	          javax.xml.namespace; version="1.0.0";resolution:=optional,
+	          org.apache.commons.logging.*,
+	          it.webscience.kpeople.logging.serviceInterface.*
+	          </Import-Package>
+	          <Export-Package>it.webscience.kpeople.epe.mediators.eventlogger</Export-Package>
+	        </instructions>
+	      </configuration>
+	    </plugin>
+	  </plugins>
+	  
+	  <resources>
+      <resource>
+        <targetPath>META-INF/services</targetPath>
+        <filtering>false</filtering>
+        <directory>${basedir}/resources/META-INF/services</directory>
+        <includes>
+          <include>org.apache.synapse.config.xml.MediatorFactory</include>
+          <include>org.apache.synapse.config.xml.MediatorSerializer</include>
+        </includes>
+      </resource>
+    </resources>
+    
+  </build>
+  
+    
+  <dependencies>
+        <dependency>
+      		<groupId>junit</groupId>
+      		<artifactId>junit</artifactId>
+      		<version>3.8.1</version>
+      		<scope>test</scope>
+    	</dependency>
+        <dependency>
+            <groupId>org.apache.synapse</groupId>
+            <artifactId>synapse-core</artifactId>
+            <version>1.4.0-wso2v1</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.ws.commons.axiom</groupId>
+            <artifactId>axiom-api</artifactId>
+            <version>1.2.5</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.axis2</groupId>
+            <artifactId>axis2-kernel</artifactId>
+            <version>1.3</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jms_1.1_spec</artifactId>
+            <version>1.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+        	<groupId>it.webscience.kpeople.logging</groupId>
+  			<artifactId>it.webscience.kpeople.logging</artifactId>
+  			<version>1.0</version>
+  		</dependency>
+  
+    </dependencies>
+    
+    
+    
+    <repositories>
+	  <repository>
+	    <id>wso2-maven2-repository</id>
+	    <name>WSO2 Maven2 Repository</name>
+	    <url>http://dist.wso2.org/maven2</url>
+	    <snapshots>
+	      <enabled>false</enabled>
+	    </snapshots>
+	    <releases>
+	      <enabled>true</enabled>
+	      <updatePolicy>never</updatePolicy>
+	      <checksumPolicy>fail</checksumPolicy>
+	    </releases>
+	  </repository>
+	</repositories>
+</project>

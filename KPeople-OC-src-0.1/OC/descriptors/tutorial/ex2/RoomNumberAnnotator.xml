@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+  <primitive>true</primitive>
+  <annotatorImplementationName>it.webscience.uima.annotators.MailContentAnnotator</annotatorImplementationName>
+  <analysisEngineMetaData>
+    <name>Room Number Annotator 2</name>
+    <description>An example annotator that searches for room numbers in the IBM Watson
+			research buildings.</description>
+    <version>1.0</version>
+    <vendor>The Apache Software Foundation</vendor>
+    <configurationParameters>
+      <configurationParameter>
+        <name>Patterns</name>
+        <description>List of room number regular expression
+					pattterns.</description>
+        <type>String</type>
+        <multiValued>true</multiValued>
+        <mandatory>true</mandatory>
+      </configurationParameter>
+      <configurationParameter>
+        <name>Locations</name>
+        <description>List of locations corresponding to the room number
+					expressions specified by the Patterns parameter</description>
+        <type>String</type>
+        <multiValued>true</multiValued>
+        <mandatory>true</mandatory>
+      </configurationParameter>
+    </configurationParameters>
+    <configurationParameterSettings>
+      <nameValuePair>
+        <name>Patterns</name>
+        <value>
+          <array>
+            <string>\b[0-4]\d-[0-2]\d\d\b</string>
+            <string>\b[G1-4][NS]-[A-Z]\d\d\b</string>
+            <string>\bJ[12]-[A-Z]\d\d\b</string>
+          </array>
+        </value>
+      </nameValuePair>
+      <nameValuePair>
+        <name>Locations</name>
+        <value>
+          <array>
+            <string>Watson - Yorktown</string>
+            <string>Watson - Hawthorne I</string>
+            <string>Watson - Hawthorne II</string>
+          </array>
+        </value>
+      </nameValuePair>
+    </configurationParameterSettings>
+    <typeSystemDescription>
+      <imports>
+        <import location="../ex1/TutorialTypeSystem.xml"/>
+      </imports>
+    </typeSystemDescription>
+    <typePriorities/>
+    <fsIndexCollection/>
+    <capabilities>
+      <capability>
+        <inputs/>
+        <outputs>
+          <type allAnnotatorFeatures="true">org.apache.uima.tutorial.RoomNumber</type>
+        </outputs>
+        <languagesSupported/>
+      </capability>
+    </capabilities>
+    <operationalProperties>
+      <modifiesCas>true</modifiesCas>
+      <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+      <outputsNewCASes>false</outputsNewCASes>
+    </operationalProperties>
+  </analysisEngineMetaData>
+  <resourceManagerConfiguration/>
+</analysisEngineDescription>

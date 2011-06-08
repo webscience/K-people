@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping schema="kpeopledomain" package="it.webscience.kpeople.domain.model">
+
+	<class name="KpeopleAction" table="action" lazy="false">
+		<id name="idAction" column="idAction" >
+			<generator class="native"/>
+		</id>
+		<property name="systemId"/>
+		<property name="actionType"/>
+		<property name="actionReference"/>
+		<property name="timestamp"/>
+		
+		<one-to-one name="event" class="it.webscience.kpeople.domain.model.KpeopleEvent" property-ref="FKEventAction"/>
+		
+		<many-to-one name="FKActionState"  column="FKActionState" not-null="true"/>		 
+		
+     	
+	</class>
+
+</hibernate-mapping>
+

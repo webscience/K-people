@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="2d048b66-6f44-4dfe-9b4a-e99a868221d2" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="CustomProcessColumn.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="CustomProcessColumn_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

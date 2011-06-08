@@ -1,0 +1,147 @@
+#set ($layout = $themeDisplay.getLayout())
+     #set ($layoutGroupId = $layout.getGroupId())
+     #set ($userGroupId = $themeDisplay.getUser().getGroup().getGroupId())
+     #set ($public = $layout.isPublicLayout())
+     #set ($mypages = $layoutGroupId==$userGroupId)
+     
+#if ($is_signed_in)
+    #set ($myPlaces = $user.getMyPlaces())
+
+    #foreach ($myPlace IN $myPlaces)
+        #if ($myPlace.isCommunity())
+            #set ($myPlaceURL = $portletURLFactory.create($request, "49", $getterUtil.getLong($plid), "ACTION_PHASE"))
+
+            ${myPlaceURL.setWindowState("normal")}
+            ${myPlaceURL.setPortletMode("view")}
+            ${myPlaceURL.setParameter("struts_action", "/my_places/view")}
+            ${myPlaceURL.setParameter("groupId", ${themeDisplay.getUser().getGroup().getGroupId().toString()})}
+
+        
+            ${myPlaceURL.setParameter("privateLayout", "true")}
+            
+        #end
+    #end
+#end
+     
+     
+     
+<div id="navigation" class="sort-pages modify-pages">
+	
+	<ul class="ui-sortable" id="ui-sortable">
+	
+		#if ($mypages)
+	
+			#foreach ($nav_item in $nav_items)
+				#if ($nav_item.getName() == "Welcome")
+					#set ($nav_item_class = "normal home")
+				#else
+					#set ($nav_item_class = "normal")
+				#end
+			
+				#if ($nav_item.isSelected()&& $nav_item.getName() != "Welcome")
+					#set ($nav_item_class = "normal selected")
+				#end
+				#foreach ($nav_child in $nav_item.getChildren())
+					#if ($nav_child.isSelected())
+						#set ($nav_item_class = "normal selected")
+					#end
+				#end
+			
+				<li class="$nav_item_class">
+					<div><a href="$nav_item.getURL()" $nav_item.getTarget()>$nav_item.getName()</a></div>
+					
+					#if ($nav_item.getName() == "My HPM") 
+						<li class="normal">
+							<div>
+								<a href="/web/guest/homepage">HPM</a>
+							</div>
+						</li>
+					#end
+					
+					#if ($nav_item.hasChildren())	
+						#set ($children = $nav_item.getChildren().size())
+						#set ($contatore = 1)
+				
+						<ul class="child-menu">
+							#foreach ($nav_child in $nav_item.getChildren())
+								#set ($nav_child_class = "")
+							
+								#if ($nav_item.getChildren().size() == 1)
+									#set ($nav_child_class = $nav_child_class + "single")
+								#elseif ($contatore==1)
+									#set ($nav_child_class = $nav_child_class + " first")
+								#elseif ($children==$contatore)
+									#set ($nav_child_class = $nav_child_class + "last")
+								#else
+									#set ($nav_child_class = $nav_child_class + "middle")
+								#end
+							
+								<li class="$nav_child_class">
+									<a href="$nav_child.getURL()" $nav_child.getTarget()>$nav_child.getName()</a>
+								</li>
+								#set ($contatore = $contatore+1)
+							#end
+						</ul>
+					
+					#end
+
+				</li>
+			#end
+		#else 	
+			<li class="normal">
+				<div>
+					<a href="$myPlaceURL.toString()">My HPM</a>
+				</div>
+			</li>
+
+			#foreach ($nav_item in $nav_items)
+				#if ($nav_item.getName() == "Welcome")
+					#set ($nav_item_class = "normal home")
+				#else
+					#set ($nav_item_class = "normal")
+				#end
+			
+				#if ($nav_item.isSelected()&& $nav_item.getName() != "Welcome")
+					#set ($nav_item_class = "normal selected")
+				#end
+				#foreach ($nav_child in $nav_item.getChildren())
+					#if ($nav_child.isSelected())
+						#set ($nav_item_class = "normal selected")
+					#end
+				#end
+			
+				<li class="$nav_item_class">
+					<div><a href="$nav_item.getURL()" $nav_item.getTarget()>$nav_item.getName()</a></div>
+					
+					#if ($nav_item.hasChildren())	
+						#set ($children = $nav_item.getChildren().size())
+						#set ($contatore = 1)
+				
+						<ul class="child-menu">
+							#foreach ($nav_child in $nav_item.getChildren())
+								#set ($nav_child_class = "")
+							
+								#if ($nav_item.getChildren().size() == 1)
+									#set ($nav_child_class = $nav_child_class + "single")
+								#elseif ($contatore==1)
+									#set ($nav_child_class = $nav_child_class + " first")
+								#elseif ($children==$contatore)
+									#set ($nav_child_class = $nav_child_class + "last")
+								#else
+									#set ($nav_child_class = $nav_child_class + "middle")
+								#end
+							
+								<li class="$nav_child_class">
+									<a href="$nav_child.getURL()" $nav_child.getTarget()>$nav_child.getName()</a>
+								</li>
+								#set ($contatore = $contatore+1)
+							#end
+						</ul>
+					
+					#end
+
+				</li>
+			#end
+		#end	
+	</ul>
+</div>

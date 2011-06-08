@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artifact name="kpeopleEGASPNotifier" version="1.0.0" type="carbon/application">
+    <dependency artifact="sharepointnotifier" version="1.0.0" serverRole="ApplicationServer"/>
+</artifact>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<event xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="id0">
+  <action>
+    <action-type>COMMUNICATION</action-type>
+    <action-reference>smb://192.168.0.47/shared/pippo.pluto/new/1287423615.V801I87152M711845.postfix.kpeople</action-reference>
+    <system>
+      <system-id>mailserver.POSTFIX.1234</system-id>
+      <system-type>mailserver</system-type>
+    </system>
+  </action>
+  <event-data>
+    <creation-date>2010-10-18T19:40:15.0Z</creation-date>
+    <title>oggetto solo html</title>
+    <author>
+      <email>pippo.pluto@kpeople.webscience.it</email>
+    </author>
+    <body>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"&gt; &lt;html&gt; &lt;head&gt; &lt;meta http-equiv="content-type" content="text/html; charset=ISO-8859-15"&gt; &lt;/head&gt; &lt;body bgcolor="#ffffff" text="#000000"&gt; &lt;font size="-1"&gt;contenuto solo html&lt;br&gt; &lt;/font&gt; &lt;/body&gt; &lt;/html&gt;</body>
+    <details>&lt;?xml version="1.0" encoding="UTF-8"?&gt; &lt;email-details&gt;&lt;receivers&gt;&lt;receiver&gt;pippo.pluto@kpeople.webscience.it&lt;/receiver&gt;&lt;/receivers&gt;&lt;/email-details&gt;</details>
+  </event-data>
+</event>

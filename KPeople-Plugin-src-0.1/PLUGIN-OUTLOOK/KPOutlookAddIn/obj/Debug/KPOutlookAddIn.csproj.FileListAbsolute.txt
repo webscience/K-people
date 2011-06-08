@@ -1,0 +1,286 @@
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.dll.config
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.dll
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.pdb
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.dll.manifest
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.vsto
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.dll
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Database.dll
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapter.dll
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapterV5.dll
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime.dll
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.EnvironmentalOverrides.dll
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.SqlCe.dll
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.dll
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cache.CachingStore.dll
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.dll
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.dll
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.AspNet.dll
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WCF.dll
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WinForms.dll
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.Unity.dll
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.xml
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.xml
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Database.xml
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime.xml
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.EnvironmentalOverrides.xml
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.SqlCe.xml
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.xml
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.xml
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.xml
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.xml
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.xml
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.xml
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cache.CachingStore.xml
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.xml
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.xml
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.AspNet.xml
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WCF.xml
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WinForms.xml
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.Unity.xml
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.Unity.Interception.xml
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\ResolveAssemblyReference.cache
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.KPRibbon.resources
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.Properties.Resources.resources
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.TagSelectorForm.resources
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.KPRibbon2.resources
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.dll
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.pdb
+C:\condivisa\Kpeople\plugin\workspace\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.csproj.ResolveComReference.cache
+C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.dll.config
+C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.dll
+C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.pdb
+C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.dll.manifest
+C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.vsto
+C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.Unity.Interception.xml
+C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.csproj.ResolveComReference.cache
+C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.Properties.Resources.resources
+C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.TagSelectorForm.resources
+C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.dll
+C:\Documents and Settings\Administrator\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.pdb
+C:\Users\spadmin\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.dll.config
+C:\Users\spadmin\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.dll
+C:\Users\spadmin\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.pdb
+C:\Users\spadmin\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.dll.manifest
+C:\Users\spadmin\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.vsto
+C:\Users\spadmin\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\spadmin\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+C:\Users\spadmin\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\spadmin\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\spadmin\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+C:\Users\spadmin\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\spadmin\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+C:\Users\spadmin\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Users\spadmin\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\spadmin\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.Unity.Interception.xml
+C:\Users\spadmin\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\spadmin\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.csproj.ResolveComReference.cache
+C:\Users\spadmin\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.Properties.Resources.resources
+C:\Users\spadmin\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.TagSelectorForm.resources
+C:\Users\spadmin\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\ResGen.read.1.tlog
+C:\Users\spadmin\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\ResGen.write.1.tlog
+C:\Users\spadmin\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.dll
+C:\Users\spadmin\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.pdb
+C:\Users\spadmin\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.RibbonProva.resources
+C:\Users\spadmin\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\en\KPOutlookAddIn.resources.dll
+C:\Users\spadmin\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.RibbonProva.en.resources
+C:\Users\spadmin\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\en\KPOutlookAddIn.resources.dll
+C:\Users\spadmin\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.RibbonMailRiceved.resources
+C:\Users\spadmin\Desktop\workspace\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.RibbonMailRiceved.en.resources
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.dll.config
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.dll
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.pdb
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\en\KPOutlookAddIn.resources.dll
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.dll.manifest
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.vsto
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Office.Interop.Outlook.dll
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Office.dll
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Office.Interop.Outlook.xml
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Office.xml
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.Unity.Interception.xml
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.csproj.ResolveComReference.cache
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.Properties.Resources.resources
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.RibbonMailRiceved.resources
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.RibbonProva.resources
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.TagSelectorForm.resources
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.RibbonMailRiceved.en.resources
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.RibbonProva.en.resources
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\ResGen.read.1.tlog
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\ResGen.write.1.tlog
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\en\KPOutlookAddIn.resources.dll
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.dll
+C:\Documents and Settings\Administrator\Desktop\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.pdb
+E:\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.dll.config
+E:\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.dll
+E:\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.pdb
+E:\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\en\KPOutlookAddIn.resources.dll
+E:\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.dll.manifest
+E:\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.vsto
+E:\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.Unity.dll
+E:\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+E:\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+E:\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.Unity.xml
+E:\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+E:\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.Unity.Interception.xml
+E:\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\ResolveAssemblyReference.cache
+E:\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.csproj.ResolveComReference.cache
+E:\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.Properties.Resources.resources
+E:\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.RibbonMailRiceved.resources
+E:\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.RibbonProva.resources
+E:\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.TagSelectorForm.resources
+E:\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.RibbonMailRiceved.en.resources
+E:\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.RibbonProva.en.resources
+E:\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\GenerateResource-ResGen.read.1.tlog
+E:\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\ResGen.read.1.tlog
+E:\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\GenerateResource-ResGen.write.1.tlog
+E:\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\ResGen.write.1.tlog
+E:\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\en\KPOutlookAddIn.resources.dll
+E:\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.dll
+E:\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.pdb
+C:\Documents and Settings\Administrator\Desktop\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.dll.config
+C:\Documents and Settings\Administrator\Desktop\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.dll
+C:\Documents and Settings\Administrator\Desktop\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.pdb
+C:\Documents and Settings\Administrator\Desktop\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\en\KPOutlookAddIn.resources.dll
+C:\Documents and Settings\Administrator\Desktop\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.dll.manifest
+C:\Documents and Settings\Administrator\Desktop\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.vsto
+C:\Documents and Settings\Administrator\Desktop\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Documents and Settings\Administrator\Desktop\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Documents and Settings\Administrator\Desktop\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+C:\Documents and Settings\Administrator\Desktop\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Documents and Settings\Administrator\Desktop\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+C:\Documents and Settings\Administrator\Desktop\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.Unity.xml
+C:\Documents and Settings\Administrator\Desktop\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Documents and Settings\Administrator\Desktop\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.Unity.Interception.xml
+C:\Documents and Settings\Administrator\Desktop\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Desktop\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.csproj.ResolveComReference.cache
+C:\Documents and Settings\Administrator\Desktop\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.Properties.Resources.resources
+C:\Documents and Settings\Administrator\Desktop\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.RibbonMailRiceved.resources
+C:\Documents and Settings\Administrator\Desktop\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.RibbonProva.resources
+C:\Documents and Settings\Administrator\Desktop\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.TagSelectorForm.resources
+C:\Documents and Settings\Administrator\Desktop\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.RibbonMailRiceved.en.resources
+C:\Documents and Settings\Administrator\Desktop\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.RibbonProva.en.resources
+C:\Documents and Settings\Administrator\Desktop\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Documents and Settings\Administrator\Desktop\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\ResGen.read.1.tlog
+C:\Documents and Settings\Administrator\Desktop\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Documents and Settings\Administrator\Desktop\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\ResGen.write.1.tlog
+C:\Documents and Settings\Administrator\Desktop\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\en\KPOutlookAddIn.resources.dll
+C:\Documents and Settings\Administrator\Desktop\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.dll
+C:\Documents and Settings\Administrator\Desktop\PLUGIN OUTLOOK 15-02-2011 ore 18.30\PluginOutlook_15-02-2011\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.pdb
+C:\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.dll.config
+C:\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.dll
+C:\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.pdb
+C:\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\en\KPOutlookAddIn.resources.dll
+C:\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.dll.manifest
+C:\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.vsto
+C:\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.Unity.dll
+C:\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+C:\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+C:\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.Unity.xml
+C:\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Practices.Unity.Interception.xml
+C:\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\ResolveAssemblyReference.cache
+C:\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.csproj.ResolveComReference.cache
+C:\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.Properties.Resources.resources
+C:\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.RibbonMailRiceved.resources
+C:\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.RibbonProva.resources
+C:\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.TagSelectorForm.resources
+C:\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.RibbonMailRiceved.en.resources
+C:\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.RibbonProva.en.resources
+C:\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\ResGen.read.1.tlog
+C:\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\ResGen.write.1.tlog
+C:\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\en\KPOutlookAddIn.resources.dll
+C:\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.dll
+C:\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.pdb
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.dll.config
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.dll
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.pdb
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\en\KPOutlookAddIn.resources.dll
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.dll.manifest
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\KPOutlookAddIn.vsto
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Office.Interop.Outlook.dll
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Microsoft.Office.Interop.Outlook.xml
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.csproj.ResolveComReference.cache
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.Properties.Resources.resources
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.RibbonMailRiceved.resources
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.TagSelectorForm.resources
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.RibbonMailRiceved.en.resources
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\en\KPOutlookAddIn.resources.dll
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.dll
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.pdb
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.Resources.KPLanguage.resources
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Resources\KPLanguage.resx
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Resources\KPLanguage.Designer.cs
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Resources\KPLanguage.it-IT.resx
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Resources\KPLanguage.it-IT.Designer.cs
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\it-IT\KPOutlookAddIn.resources.dll
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.Resources.KPLanguage.it-IT.resources
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\it-IT\KPOutlookAddIn.resources.dll
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Resources\KPLanguage.ro-RO.resx
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Resources\KPLanguage.pt-PT.resx
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Resources\KPLanguage.es-ES.resx
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Resources\KPLanguage.en-US.resx
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Resources\KPLanguage.ro-RO.Designer.cs
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Resources\KPLanguage.pt-PT.Designer.cs
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Resources\KPLanguage.es-ES.Designer.cs
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\Resources\KPLanguage.en-US.Designer.cs
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\ro-RO\KPOutlookAddIn.resources.dll
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\pt-PT\KPOutlookAddIn.resources.dll
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\es-ES\KPOutlookAddIn.resources.dll
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\bin\Debug\en-US\KPOutlookAddIn.resources.dll
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.Resources.KPLanguage.ro-RO.resources
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.Resources.KPLanguage.pt-PT.resources
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.Resources.KPLanguage.es-ES.resources
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\KPOutlookAddIn.Resources.KPLanguage.en-US.resources
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\ro-RO\KPOutlookAddIn.resources.dll
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\pt-PT\KPOutlookAddIn.resources.dll
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\es-ES\KPOutlookAddIn.resources.dll
+C:\Documents and Settings\Administrator\Desktop\KPOutlookAddIn\KPOutlookAddIn\obj\Debug\en-US\KPOutlookAddIn.resources.dll

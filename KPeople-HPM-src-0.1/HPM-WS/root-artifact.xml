@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artifact name="CarbonApp" version="1.0.0" type="carbon/application">
+    <dependency artifact="DocumentService" version="1.0.0" serverRole="ApplicationServer"/>
+    <dependency artifact="EventService" version="1.0.0" serverRole="ApplicationServer"/>
+    <dependency artifact="GlobalSearchService" version="1.0.0" serverRole="ApplicationServer"/>
+    <dependency artifact="MailService" version="1.0.0" serverRole="ApplicationServer"/>
+    <dependency artifact="PatternService" version="1.0.0" serverRole="ApplicationServer"/>
+    <dependency artifact="ProcessEventService" version="1.0.0" serverRole="ApplicationServer"/>
+    <dependency artifact="ProcessMetadataService" version="1.0.0" serverRole="ApplicationServer"/>
+    <dependency artifact="ProcessService" version="1.0.0" serverRole="ApplicationServer"/>
+    <dependency artifact="ProcessTypeService" version="1.0.0" serverRole="ApplicationServer"/>
+    <dependency artifact="UserEventService" version="1.0.0" serverRole="ApplicationServer"/>
+    <dependency artifact="UserService" version="1.0.0" serverRole="ApplicationServer"/>
+</artifact>

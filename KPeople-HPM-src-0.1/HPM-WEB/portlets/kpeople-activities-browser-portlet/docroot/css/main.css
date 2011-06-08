@@ -1,0 +1,229 @@
+#activities-browser-portlet .actContainerTop {
+    background: url("../images/docs_open.png") repeat scroll 0 0 transparent;
+    height: 18px;
+    position: relative;
+    width: 321px;
+}
+
+#activities-browser-portlet .arrow {
+    height: 7px;
+    left: 282px;
+    position: absolute;
+    top: 13px;
+    width: 14px;
+    cursor: pointer;
+}
+
+#activities-browser-portlet .arrowUp {
+	background: url("../images/arrow_up.png");
+}
+
+#activities-browser-portlet .arrowDown {
+	display: none;
+	background: url("../images/arrow_down.png");
+}
+
+#activities-browser-portlet .actContainerTop .lbl {
+    color: #9E005D;
+    font-size: 12px;
+    font-weight: bold;
+    left: 32px;
+    position: absolute;
+    top: 10px;
+}
+
+#activities-browser-portlet .actContainerBottom {
+    background: url("../images/docs_close.png") repeat scroll 0 0 transparent;
+    height: 18px;
+    width: 321px;
+}
+
+#activities-browser-portlet .actContainerRpt {
+    background: url("../images/docs_rpt.png") repeat scroll 0 0 transparent;
+    padding: 13px 0 6px 14px;
+    width: 307px;
+    height: 210px;
+    overflow: hidden;
+}
+
+#activities-browser-portlet-results-box {
+    margin-top: 7px;
+    width: 292px;
+}
+
+#activities-browser-portlet-results-box .results-row.alt td {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+
+#activities-browser-portlet-results-box .results-row.hover td {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+
+#activities-browser-portlet-results-box .taglib-search-iterator a {
+    color: blue;
+    text-decoration: none;
+}
+
+#activities-browser-portlet-results-box .taglib-search-iterator a:HOVER {
+	text-decoration: underline;
+}
+
+#activities-browser-portlet-results-box .hover {
+	background-color: #FFFFFF;
+}
+
+#activities-browser-portlet .resultsSeparator {
+    background-color: #E6E6E6;
+    height: 1px;
+    margin: 3px 0;
+}
+
+#activities-browser-portlet .resultRowA {
+    background-color: #F2F2F2;
+    height: 55px;
+    padding: 2px 30px 1px 5px;
+}
+
+/* gestione todo e pending */
+#activities-browser-portlet .menu-activities-selected {
+    background-color: #9E005D;  
+    color: #FFFFFF;
+}
+
+#activities-browser-portlet .menu-activities {
+    float: left;
+    margin-right: 20px;
+    padding-right: 10px;
+    text-align: center;
+    width: 150px;
+    cursor: pointer;
+    padding-top: 8px;
+}
+
+#activities-browser-portlet .menu-todo{
+    float: left;
+    width: 75px;
+    height: 15px;
+}
+
+#activities-browser-portlet .menu-pending{
+    float: left;
+    width: 75px;
+    height: 15px;
+}
+
+#activities-browser-portlet .portlet-msg-info {
+	margin-top: 35px;
+}
+
+
+#activities-browser-portlet .action-type-id {
+    color: #FFFFFF;
+    font-size: 8px;
+    font-weight: bold;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 28px;
+    width: 105px;
+}
+
+#activities-browser-portlet .action-type {
+    margin: 3px;
+    position: relative;
+    width: 110px;
+}
+
+#activities-browser-portlet .action-type-name {
+    color: #FFFFFF;
+    font-size: 9px;
+    font-weight: bold;
+   
+    line-height: 24px;
+    position: absolute;
+    text-align: center;
+    top: 1px;
+    width: 103px;
+}
+
+
+#activities-browser-portlet .activityInfo {
+	color:#666666;
+	height:25px;
+	width: 120px;
+	font-size: 11px;
+	cursor: pointer;
+}
+
+#activities-browser-portlet .activityData {	
+	margin-left: 120px;
+	margin-top:-50px;
+}
+
+#activities-browser-portlet .activityName {
+    color: #222222;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 7px;
+    width: 145px;
+    cursor: pointer;
+}
+
+
+
+#activities-browser-portlet .activity-details{
+	padding-bottom: 30px;
+}
+
+#activities-browser-portlet .details span{
+	padding-right: 20px;		
+}
+
+#activities-browser-portlet .date-details input{
+	padding-left: 10px;
+	margin-left: 10px;
+}
+#activities-browser-portlet span#label{
+	margin-left: 50px;
+}
+#activities-browser-portlet span#description{
+	valign: center;
+}
+#activities-browser-portlet #text-content{
+	padding-left: 50px;
+}
+#activities-browser-portlet #description{
+	padding-top: 20px;
+}
+
+/* Stile per l'accettazione dell'attività */
+#activities-browser-portlet #id-activityName{
+	width: 250px;
+	font-size: 14px;
+	padding-bottom: 10px;
+}
+
+#activities-browser-portlet #id-activityInfo-accepted{
+	width: 250px;
+}
+
+#activities-browser-portlet .activityAcceptedRejected{
+	color: #222222;
+	width: 500px;
+	height: 60px;
+	font-size: 16px;
+	font-weight: bold;
+	padding-top: 50px;
+}
+
+#activities-browser-portlet .invia-contributo-details{
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+
+#activities-browser-portlet #button-control{
+	padding-top: 30px;
+	padding-bottom: 30px;
+		
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+  <default-config>
+    <property name="maxIdleTime">14400</property>
+    <property name="maxPoolSize">15</property>
+    <property name="minPoolSize">1</property>
+    <property name="acquireIncrement">1</property> 
+	<property name="idleConnectionTestPeriod">14400</property>
+
+  </default-config>
+</c3p0-config>

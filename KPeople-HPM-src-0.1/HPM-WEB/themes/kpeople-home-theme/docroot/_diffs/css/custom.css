@@ -1,0 +1,1235 @@
+p {
+	margin-bottom: 0px;
+}
+
+#wrapper {
+	font-family: Helvetica;
+	line-height: 13px;
+	margin: 0 auto;
+	width: 500px;
+}
+
+/* -------- Bottone -------*/
+
+a.button {
+	background: url("../images/kpeople/bottone_Sx.gif") no-repeat scroll right top transparent;
+	color: #444;
+	display: block;
+	float: left;
+	font: 12px arial,sans-serif;
+	height: 24px;
+	margin-right: 6px;
+	padding-right: 18px;
+	text-decoration: none;
+}
+
+a.button span {
+	background: url("../images/kpeople/bottone_Dx.gif") no-repeat scroll 0 0 transparent;
+	color: #FFF;
+	display: block;
+	font-weight: bold;
+	line-height: 14px;
+	padding: 5px 0 5px 18px;
+}
+
+/* -------- Stili del paginatore -------*/
+
+#footer {
+	background-color: #E6E6E6;
+	clear: both;
+	color: #4D4D4D;
+	font-size: 11px;
+	height: 85px;
+	line-height: 14px;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+
+
+#footer-col7 {
+	font-size: 9px;
+	left: 100px;
+	position: absolute;
+	top: 20px;
+}
+
+#footer-col8 {
+	font-size: 9px;
+	left: 400px;
+	position: absolute;
+	top: 20px;
+}
+
+.divisore {
+	background: url("../images/kpeople/divisore.png") repeat-x scroll 0 0 transparent;
+	height: 14px;
+	margin-bottom: 7px;
+	margin-top: 7px;
+	width: 100%;
+}
+
+.divisore-laterale {
+	background: url("../images/kpeople/divisore-laterale.png") no-repeat scroll 0 0 transparent;
+	height: 14px;
+	margin-bottom: 4px;
+	margin-top: 16px;
+	width: 100%;
+}
+
+.community-menu-dx {
+	background: url("../images/kpeople/community-logo.png") no-repeat scroll 0 0 transparent;
+	color: #333;
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	padding-left: 20px;
+}
+
+.news-menu-dx {
+	background: url("../images/kpeople/news-logo.png") no-repeat scroll 0 0 transparent;
+	color: #333;
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	padding-left: 20px;
+}
+
+.last-download-menu-dx {
+	background: url("../images/kpeople/last-download-logo.png") no-repeat scroll 0 0 transparent;
+	color: #333;
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	padding-left: 20px;
+}
+
+.rss-menu-dx {
+	background: url("../images/kpeople/rss-logo.png") no-repeat scroll 0 0 transparent;
+	font-weight: bold;
+	margin-bottom: 10px;
+	padding-left: 20px;
+}
+.rss-menu-dx a{
+	color: #333;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+#footer-kpeople {
+	background: url("../images/footer/kpeople-footer.png") repeat scroll 0 0 transparent;
+	height: 39px;
+  	left: 50px;	
+  	position: absolute;
+	top: 20px;
+	width: 27px;
+}
+
+#footer-ws {
+	background: url("../images/footer/ws-footer.png") repeat scroll 0 0 transparent;
+	height: 17px;
+	 left: 400px;
+	position: absolute;
+	top: 39px;
+	width: 39px;
+}
+
+#footer a {
+	color: #4D4D4D;
+	text-decoration: none;
+	font-size: 9px;
+	line-height: 9px;
+}
+
+#footer a:visited {
+	color: #4D4D4D;
+}
+
+#column-1 {
+	padding-left: 100px;
+	width: 95%;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+#column-2 {
+	width: 5%;
+}
+
+.aui-field-input-text {
+	width: 240px;
+}
+
+.aui-button-input-submit {
+	margin-left: 200px;
+
+}
+
+/* -------- Download -------*/
+
+#download-content {
+	width: 464px;
+}
+
+#dwn-source-code, #dwn-binary-code {
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 34px;
+}
+
+.dwn-black-line {
+	background-color: #666;
+	height: 5px;
+	width: 464px;
+}
+
+.dwn-box-gray {
+	background-color: #F2F2F2;
+	border: 1px solid #CCC;
+	height: 106px;
+}
+
+.dwn-box-white {
+	background-color: white;
+	border: 1px solid #CCC;
+	height: 106px;
+}
+
+.dwn-download-box {
+	background: url("../images/kpeople/download1.png") no-repeat scroll 20px 18px transparent;
+	float: left;
+	height: 73px;
+	width: 87px;
+}
+
+.dwn-download-box-2 {
+	background: url("../images/kpeople/download2.png") no-repeat scroll 20px 18px transparent;
+	cursor: pointer;
+	float: left;
+	font-size: 9px;
+	padding-top: 69px;
+	text-align: center;
+	width: 87px;
+}
+
+.dwn-lucchetto-rosso {
+	background: url("../images/kpeople/lucchetto1.png") no-repeat scroll 0px 0px transparent;
+	float: left;
+	height: 24px;
+	margin-right: 7px;
+	width: 19px;
+}
+
+.dwn-lucchetto-verde {
+	background: url("../images/kpeople/lucchetto2.png") no-repeat scroll 0px 0px transparent;
+	float: left;
+	height: 24px;
+	margin-right: 7px;
+	width: 19px;
+}
+
+.dwn-data {
+	color: #666;
+	font-size: 10px;
+	font-weight: normal;
+}
+
+.dwn-testo {
+	border-top: 1px solid #CCC;
+	color: #333;
+	font-size: 11px;
+	margin-top: 8px;
+	padding-top: 7px;
+	width: 345px;
+}
+
+.dwn-latest {
+	color: #83005A;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.dwn-content {
+	float: left;
+	padding-top: 14px;
+}
+
+/* -------- Stili del paginatore -------*/
+
+.taglib-page-iterator {
+	margin-top: 0.5em;
+}
+
+/* ------ Advanced Web Content List -----*/
+
+.advanced-web-content-list-arrows{
+ 	padding-right:48px;
+ 
+ } 
+
+.advanced-web-content-list-item .abstract {
+	font-size: 10px;
+	font-weight: normal;
+	text-align:justify;
+	color:#666666;
+}
+
+.advanced-web-content-list-item-more a {
+	color: #333;
+	font-style: oblique;
+	font-weight: 10px;
+	text-decoration: none;
+}
+
+.advanced-web-content-list-item {
+	margin-bottom: 0.25em;
+}
+
+.advanced-web-content-list-read-all-news {
+	margin-top: 0.5em;
+	color:#97005D;
+}
+
+.advanced-web-content-list-read-all-news a,   .last-wiki-subject a {
+	color: #333;
+	font-style: oblique;
+	font-weight: 10px;
+	text-decoration: none;
+}
+
+#errorLoginBox {
+	background: url("../images/kpeople/login-error.png") no-repeat scroll 0 50% transparent;
+	color: white;
+	font-size: 10px;
+	font-weight: bold;
+	height: 58px;
+	left: -59px;
+	padding-left: 26px;
+	padding-top: 19px;
+	position: absolute;
+	top: 61px;
+	width: 214px;
+}
+#welcomeLoginBox {
+
+	background:url("../images/kpeople/login-correct.png") no-repeat scroll 0 50% transparent;
+	color:white;
+	font-size:10px;
+	font-weight:bold;
+	height:62px;
+	left:-59px;
+	padding-left:26px;
+	padding-top:19px;
+	position:absolute;
+	top:61px;
+	width:214px;
+}
+
+.advanced-web-content-list-prev-arrow {
+	background: url(../images/advanced_web_content_list/prev_article.png) no-repeat 0 50%;
+	float: right;
+	width: 15px;
+	cursor:pointer;
+}
+
+.advanced-web-content-list-next-arrow {
+	background: url(../images/advanced_web_content_list/next_article.png) no-repeat 0 50%;
+	float: right;
+	width: 15px;
+	cursor:pointer;
+}
+
+.advanced-web-content-list-prev-arrow-disabled {
+	background: url(../images/advanced_web_content_list/prev_article_disabled.png) no-repeat 0 50%;
+	float: right;
+	width: 15px;
+}
+
+.advanced-web-content-list-next-arrow-disabled {
+	background: url(../images/advanced_web_content_list/next_article_disabled.png) no-repeat 0 50%;
+	float: right;
+	width: 15px;
+}
+
+/* ---------- Header ---------- */
+
+#header-lng {
+	color: white;
+	font-size: 12px;
+    left: 400px;
+	position: absolute;
+	top: 115px;
+	z-index: 30;
+}
+
+#header-lng .portlet-content {
+	padding: 0px;
+}
+
+#header-lng .selected {
+	font-weight: bold;
+}
+
+#header-lng .not-selected {
+	font-weight: normal;
+}
+
+#header-lng a {
+	color: white;
+	text-decoration: none;
+}
+
+#header-lng a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+#header-lng .portlet-topper, #header-lng .navigation {
+	display: none;
+}
+
+#logo-header {
+	background: url(../images/header/logo.png);
+	cursor: pointer;
+	height: 78px;
+	left: 25px;
+	position: absolute;
+	top: 10px;
+	width: 57px;
+	z-index: 30;
+}
+
+/* ---------- Header login ---------- */
+
+.portlet-login .portlet-topper {
+	display: none;
+}
+
+
+.portlet-login #create-account-title-maximized {
+	color: #3C80F6;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 18px;
+}
+
+.portlet-login .portlet-title span {
+	display: none;
+}
+
+.portlet-login .portlet-icon-back {
+	display: none;
+}
+
+.portlet-login #create-account-container .ctrl-holder label {
+	color: #666;
+	font-size: 12px;
+}
+
+.portlet-login #create-account-container .taglib-captcha{
+	padding-left: 4px;
+}
+
+
+.portlet-login #create-account-container input[type="text"],   .portlet-login #create-account-container input[type="password"] {
+	background: none repeat scroll 0 0 white;
+	color: black;
+	font: normal 17px Helvetica;
+	height: 21px;
+	margin-bottom: 2px;
+	padding: 2px;
+	width: 300px;
+}
+
+.portlet-login #create-account-container {
+	background: url("../images/header/ombraMenuBottom.png") repeat-x scroll 0 0 transparent;
+	padding-left: 212px;
+	padding-top: 30px;
+}
+
+.portlet-login .portlet-content {
+	padding: 0px;
+}
+
+.portlet-login #mandatory-fields {
+	color: #666;
+	font-size: 12px;
+	padding: 3px 10px 15px;
+}
+
+.portlet-login #termini-condizioni {
+	color: #333;
+	font-size: 12px;
+	padding: 3px 10px 5px;
+}
+
+.portlet-login #trattamento-dati {
+	color: #666;
+	font-size: 12px;
+	padding-left: 10px;
+	text-align: justify;
+	width: 600px;
+}
+
+.portlet-login #trattamento-dati-acconsento {
+	color: #666;
+	font-size: 12px;
+	padding-left: 3px;
+	padding-top: 20px;
+}
+
+.portlet-login #sign-up-button {
+	margin-bottom: 10px;
+	text-align: right;
+	width: 600px;
+}
+
+.header-login-section {
+	display: none;
+}
+
+/* ---------- Azioni container (Stampa articolo e Segnala) ---------- */
+
+.azioni-container {
+	color: #4469CE;
+	float: right;
+	font-size: 10px;
+	line-height: 25px;
+	margin-top: 30px;
+	padding-bottom: 40px;
+	text-decoration: underline;
+	padding-right:48px;
+}
+
+.azioni-container .stampa-testo {
+	cursor: pointer;
+	float: left;
+}
+
+.azioni-container .stampa-ico {
+	background: url("../images/kpeople/icona-stampa.gif") no-repeat scroll 0 0 transparent;
+	cursor: pointer;
+	float: left;
+	height: 16px;
+	margin-left: 4px;
+	margin-right: 12px;
+	margin-top: 6px;
+	width: 16px;
+}
+
+.azioni-container .segnala-testo {
+	cursor: pointer;
+	float: left;
+}
+
+.azioni-container .segnala-ico {
+	background: url("../images/kpeople/icona-segnala.gif") repeat scroll 0 0 transparent;
+	cursor: pointer;
+	float: left;
+	height: 16px;
+	margin-left: 4px;
+	margin-top: 6px;
+	width: 16px;
+}
+
+/* ---------- Header login ---------- */
+
+#header-login {
+	left: 796px;
+	position: absolute;
+	top: 19px;
+	z-index: 30;
+}
+
+#header-login .portlet-msg-error {
+	display: none;
+}
+
+#header-login .portlet-content {
+	padding: 0px;
+}
+
+#header-login .portlet-topper {
+	display: none;
+}
+
+#header-login .signed-as {
+	color: White;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#header-login .fullname {
+	color: White;
+	font-size: 12px;
+	font-weight: normal;
+	width: 158px;
+}
+
+#header-login .my-profile {
+	border-bottom: 1px solid #6CF;
+	color: #6CF;
+	font-size: 10px;
+	font-weight: normal;
+	width: 133px;
+}
+
+#header-login .my-profile a {
+	color: #6CF;
+	text-decoration: none;
+}
+
+#header-login .my-profile a:hover {
+	color: #6CF;
+	text-decoration: none;
+}
+
+#header-login fieldset {
+	border: 0px;
+	padding: 0px;
+}
+
+#header-login_username {
+	background: none repeat scroll 0 0 white;
+	color: black;
+	font: normal 11px Helvetica;
+	height: 11px;
+	margin-bottom: 2px;
+	padding: 2px;
+	width: 144px;
+}
+
+#header-login_password {
+	background: none repeat scroll 0 0 white;
+	color: black;
+	font: normal 11px helvetica;
+	height: 11px;
+	padding: 2px;
+	width: 101px;
+}
+
+#header-loginBtn {
+	background: url("../images/kpeople/pulsanteLogin.png") repeat scroll 0 0 transparent;
+	border: 0 none;
+	color: white;
+	font-weight: normal;
+	height: 18px;
+	line-height: 18px;
+	padding: 0;
+	width: 41px;
+}
+
+.header-login-links-1 {
+	
+	color: #FFFFFF;
+}
+
+.header-login-links-1 a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.header-userNameContainer {
+}
+
+.header-passwordContainer {
+}
+
+.ombraMenuBottom {
+	background: url("../images/header/ombraMenuBottom.png") repeat scroll 0 0 transparent;
+}
+
+/* ---------- Header search box ---------- */
+
+.portlet-search .portlet-topper .portlet-title{
+	display: none;
+}
+.portlet-search .portlet-topper .portlet-icons{
+	top:25px;
+}
+
+#header-search {
+	background:url("../images/header/search-box.png") no-repeat scroll 0 0 transparent;
+	left: 660px;
+	position: absolute;
+	top: 65px;
+	z-index: 19;
+}
+
+#header-search .portlet-topper {
+	display: none;
+}
+
+#header-search input[type="image"], #header-search select {
+	display: none;
+}
+
+#header-search input[type="text"] {
+	background:none repeat scroll 0 0 transparent;	
+	border: 0 none;
+	color: #666;
+	font-size: 11px;
+	font-weight: normal;
+	height: 10px;
+	margin-bottom: 3px;
+	padding-left: 12px;
+	padding-right: 29px;
+	width: 76px;
+}
+
+.ie #header-search input[type="text"] {
+	padding-top: 0px;
+	width: 50px;
+	margin-top: 3px;
+	padding-right: 20px;
+	margin-left: 6px;
+}
+
+
+#dock-header {
+	left: -239px;
+	position: relative;
+}
+
+#menu-header-navigation {
+	background: url("../images/header/bg_menu.png") repeat scroll 0 0 transparent;
+	height: 110px;
+	left: 0;
+	position: absolute;
+	top: 9px;
+	width: 970px;
+}
+
+#banner {
+	height: 100px;
+	position: relative;
+	z-index: 20;
+	margin-top: 50px;
+	background-color: buttonshadow;
+}
+
+/* ---------- Main navigation ---------- */
+
+#navigation {
+	left: 61px;
+	position: relative;
+	top: 53px;
+	width: 737px;
+}
+
+#navigation ul {
+	min-height: 2em;
+	width: 90%;
+}
+
+#navigation li {
+	color: white;
+	display: inline;
+	font-size: 16px;
+	font-weight: bold;
+	height: 36px;
+	padding-top: 8px;
+	width: 113px;
+}
+
+#navigation div {
+	text-align: center;
+}
+
+#navigation a {
+	color: white;
+	padding: 0;
+}
+
+#navigation li a {
+	display: block;
+	text-decoration: none;
+}
+
+#navigation li a span {
+	text-decoration: none;
+}
+
+#navigation li.selected a, #navigation li a:hover, #navigation .child-menu li a {
+}
+
+#navigation .child-menu li:hover {
+}
+
+#navigation li.selected div, #navigation li:hover div{
+	background: url("../images/header/menu-li-selected.png") repeat scroll 0 0 transparent;
+}
+
+#navigation li.selected a span {
+	text-align: center;
+}
+
+#navigation li:hover .child-menu {
+	display: block;
+	position: absolute;
+	z-index: 300;
+}
+
+.ie6 #navigation li.hover .child-menu {
+	background: #1E2529;
+	display: block;
+	position: absolute;
+	width: 200px;
+	z-index: 300;
+}
+
+#navigation .child-menu {
+	padding-bottom: 8px;
+	width: 135px;
+}
+
+#navigation .child-menu .single {
+	background: url("../images/header/menu-li-single.png") no-repeat scroll -6px -32px transparent;
+	height: 50px;
+	padding-top: 20px;
+}
+
+#navigation .child-menu .first {
+	background: url("../images/header/menu-li-children.png") no-repeat scroll -6px -32px transparent;
+	padding-top: 20px;
+}
+
+#navigation .child-menu .middle {
+	background: url("../images/header/menu-li-children-middle.png") repeat-y scroll -6px -5px transparent;
+	padding-top: 8px;
+}
+
+#navigation .child-menu .last {
+	background: url("../images/header/menu-li-children.png") no-repeat scroll -6px -60px transparent;
+	padding-bottom: 20px;
+	padding-top: 8px;
+}
+
+#navigation li.selected, #navigation li:hover {
+	background: url("../images/header/menu-li-selected.png") repeat scroll 0 0 transparent;
+}
+
+#navigation .child-menu li {
+	height: 20px;
+	padding-left: 13px;
+	text-align: left;
+}
+
+#navigation .child-menu li a {
+	cursor: pointer !important;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.ie7 #navigation .child-menu li a {
+	zoom: 1;
+}
+
+#navigation .child-menu li a:hover {
+}
+
+#navigation .child-menu .selected a {
+	background: #020509 url(../images/navigation/bullet_selected.png) no-repeat 5px 50%;
+}
+
+/* --------- STILI GENERICI PER TPL CON DIV ------------ */      /* --------- STILI PER TPL A 3 COLONNE CON DIV -------------- */
+
+div.tpl-3-columns-left {
+	float: left;
+	width: 180px;
+}
+
+div.tpl-3-columns-center {
+	float: left;
+	width: 500px;
+}
+
+div.tpl-3-columns-right {
+	float: right;
+	width: 290px;
+}
+
+div.tpl-3-columns-right #column-3-2 {
+	margin-left: 10px;
+	margin-right: 30px;
+}
+
+/* --------- Forum -------------- */
+
+.last-forum {
+	color: #333;
+	padding-left: 13px;
+}
+
+.last-forum-title {
+	font-size: 19px;
+	margin-bottom: 5px;
+}
+
+.last-forum-date, .last-forum-by {
+}
+
+.last-forum-subject a {
+	color: #333;
+	font-size: 10px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.last-forum-message {
+	font-size: 9px;
+	margin-bottom: 6px;
+}
+
+.last-forum-subject a:VISITED {
+	color: #333;
+}
+
+/* --------- menu-sx-container -------------- */
+
+div.menu-sx-container {
+	background: url("../images/kpeople/menu-sx-container.png") no-repeat scroll 0 0 transparent;
+	height: 130px;
+	padding-top: 17px;
+}
+
+div.menu-sx-container-3 {
+	background: url("../images/kpeople/menu-sx-container-3.png") no-repeat scroll 0 0 transparent;
+	height: 130px;
+	padding-top: 17px;
+	margin-top:-1px;
+}
+div.menu-sx-container-4 {
+	background: url("../images/kpeople/menu-sx-container-4.png") no-repeat scroll 0 0 transparent;
+	height: 185px;
+	padding-top: 17px;
+	margin-top:-1px;
+}
+
+div.menu-sx-container ul, div.menu-sx-container-3 ul, div.menu-sx-container-4 ul {
+	margin-top: 0px;
+}
+
+div.menu-sx-container a, div.menu-sx-container-3 a, div.menu-sx-container-4 a {
+	color: white;
+	font-size: 14px;
+	margin-left: 7px;
+	text-decoration: none;
+}
+
+div.menu-sx-container li, div.menu-sx-container-3 li, div.menu-sx-container-4 li{
+	color: white;
+	font-family: Helvetica;
+	font-size: 12px;
+	line-height: 30pt;
+	list-style-type: none;
+	padding-left: 6 px;
+	text-indent: 10px;
+}
+
+div.menu-sx-container li.menu-sx-item-selected, div.menu-sx-container-3 li.menu-sx-item-selected, div.menu-sx-container-4 li.menu-sx-item-selected {
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.dissolvenza-nero-menu {
+	background: url("../images/kpeople/dissolvenza-nero-menu.png") repeat-x scroll 0 0 white;
+	height: 20px;
+	width: 100%;
+}
+
+.sintesi-obiettivi,   .sintesi-news,   .sintesi-product-docs,  .sintesi-white-paper {
+	background: url("../images/kpeople/bg-sintesi.png") no-repeat scroll -14px 0 white;
+	color: #666;
+	font-size: 11px;
+	height: 86px;
+	padding-right: 50px;
+	padding-top: 16px;
+	text-align: justify;
+}
+
+.obiettivo-titolo {
+	color: #333;
+	font-size: 19px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#p_p_id_ADVANCED_WEB_CONTENT_LIST_INSTANCE_as3G_ .taglib-page-iterator,  #p_p_id_ADVANCED_WEB_CONTENT_LIST_INSTANCE_N6ay_ .taglib-page-iterator {
+	display: none;
+}
+
+/* --------- STILI PER TPL HOMEPAGE CON DIV -------------- */
+
+div.home-content {
+}
+
+div.home-video {
+	float: left;
+	width: 625px;
+}
+
+div.home-menu-dx {
+	float: left;
+	width: 345px;
+}
+
+div.home-box {
+	width: 970px;
+}
+
+div.home-box-1 {
+	background: url("../images/header/ombraMenuBottom.png") repeat-x scroll 0 0 transparent;
+	float: left;
+	min-height: 170px;
+	padding-left: 14px;
+	padding-right: 14px;
+	padding-top: 32px;
+	width: 212px;
+}
+
+div.home-box-2 {
+	background: url("../images/header/ombraMenuBottom.png") repeat-x scroll 0 0 transparent;
+	float: left;
+	min-height: 170px;
+	padding-left: 14px;
+	padding-right: 14px;
+	padding-top: 32px;
+	width: 212px;
+}
+
+div.home-box-3 {
+	background: url("../images/header/ombraMenuBottom.png") repeat-x scroll 0 0 transparent;
+	float: left;
+	min-height: 170px;
+	padding-left: 14px;
+	padding-right: 14px;
+	padding-top: 32px;
+	width: 211px;
+}
+
+div.home-box-4 {
+	background: url("../images/header/ombraMenuBottom.png") repeat-x scroll 0 0 transparent;
+	float: left;
+	min-height: 170px;
+	padding-left: 14px;
+	padding-right: 14px;
+	padding-top: 32px;
+	width: 211px;
+}
+
+div.home-box-divisore {
+	background: url("../images/header/ombraMenuBottom.png") repeat-x scroll 0 0 transparent;
+	float: left;
+	height: 250px;
+	width: 4px;
+}
+
+.home-box-divisore-line {
+	background: url("../images/header/divisore-box.png") repeat-x scroll 0 0 transparent;
+	height: 132px;
+	margin-top: 60px;
+	width: 3px;
+}
+
+/* --------- STILI PER TPL A 2 COLONNE CON DIV -------------- */
+
+div.tpl-2-columns-div-left {
+	float: left;
+	width: 188px;
+}
+
+div.tpl-2-columns-div-right {
+	float: right;
+	width: 678px;
+}
+
+/* --------- STILI PER I RISULTATI DELLA RICERCA -------------- */
+
+ #p_p_id_3_ {
+background:url("../images/header/ombraMenuBottom.png") repeat-x scroll 0 0 transparent;
+
+}
+
+.search-portlet-title{
+	background-color: #727C81; 
+	color: #FFFFFF; 
+	font-weight: bold;
+	font-size: 12px;
+	padding-left:5px;
+	padding-top:5px;
+}
+
+.search-title {
+	color: #97005D;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	line-height:20px;
+}
+
+.search-title:hover {
+	color: #97005D;
+	text-decoration: underline;
+}
+
+.search-summary, .search-tags {
+	font-size: 11px;
+	line-height: 14px;
+}
+
+.search-item {
+	padding: 10px;
+}
+
+.search-more {
+	height: 20px;
+	padding-top: 5px;
+}
+
+/* --------- STILI PER MODIFICA PROFILO -------------- */
+
+.modify-avatar{
+	float:left;
+	padding-top:70px;
+	width:300px;
+	text-align:center;
+}
+
+
+.modify-account {
+	color: #3C80F6;
+	margin-bottom: 18px;
+	padding-top: 50px;
+	padding-left: 40px;
+	float:left;
+}
+
+.modify-account fieldset{
+	border:medium hidden;
+}
+
+.modify-account .modify-account-title {
+	color: #3C80F6;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 18px;
+}
+
+.modify-account .ctrl-holder label {
+	color: #666;
+	font-size: 12px;
+}
+
+.modify-account input[type="text"], .modify-account input[type="password"] {
+	background: none repeat scroll 0 0 white;
+	color: black;
+	font: normal 17px Helvetica;
+	height: 21px;
+	margin-bottom: 2px;
+	padding: 2px;
+	width: 300px;
+}
+
+.modify-account #update-button {
+	font-size: 12px;
+	margin-bottom: 10px;
+	padding-top: 20px;
+	text-align: right;
+	width: 315px;
+}
+
+.modify-account #toggle_id_edit_user_profile{
+
+	font-size:12px;
+	font-style:italic;
+	
+	padding-top:15px;
+
+}
+
+.modify-account a#toggle_id_edit_user_message{
+	color:#3C80F6;
+	padding-left:3px;
+}
+
+#toggle_id_edit_user .ctrl-holder {
+	padding-top: 10px;
+}
+
+.modify-account .user-avatar{
+	float: left;
+	margin-left:5px;
+	width:300px;
+	text-align:center;
+	width:300px;
+}
+
+
+/* --------- STILI PER i pulsanti -------------- */
+a.button-style {
+    background: transparent url(../images/kpeople/bottone_Dx.gif) no-repeat scroll top right;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font: normal 12px arial, sans-serif;
+    height: 24px;
+    margin-right: 6px;
+    padding-right: 11px; /* sliding doors padding */
+    text-decoration: none;
+}
+ a.button-style span {
+    background: transparent url(../images/kpeople/bottone_Sx.gif) no-repeat;
+    display: block;
+    line-height: 14px;
+    padding: 0px 0px 1px 11px;
+    font-size:10px;
+	font-weight:bold;
+}
+
+a.button-style:hover {
+   cursor:pointer;
+   color: #FFFFFF;
+   text-decoration: none;
+}
+
+a.button-style:hover span {
+	cursor:pointer;
+	color: #FFFFFF;
+	text-decoration: none;
+} 
+
+/* STILE PER TOOLBAR DELLA CASELLA DI TESTO*/
+
+.portlet-message-boards .lfr-toolbar {
+	background-color:#E5E4E8;
+	padding-top:3px;
+	width:95%;
+}
+
+/* STILE PER TUTTI I BREADCRUMBS*/
+
+.breadcrumbs {
+	color:#666666;
+	margin-bottom:1.5em;
+}
+
+/* STILE PER IL PULSANTE SALVA DEL FORUM */
+
+.portlet-message-boards .reply-command input[type="submit"], .portlet-message-boards .reply-command input[type="submit"]:hover,
+.portlet-document-library input[type="submit"], .portlet-document-library input[type="submit"]:hover {
+	background: transparent url(../images/kpeople/pulsanteAggiungi.png) no-repeat scroll top right;
+	border:medium none;
+	color:white;
+	cursor:pointer;
+	font-weight:bold;
+	height:16px;
+	overflow:visible;
+	padding-top:0;
+	width:61px;
+}
+
+/* STILE PER NASCONDERE LA HOME DAL MENU NAVIGAZIONALE*/
+
+#navigation .home {
+	display: none;
+}

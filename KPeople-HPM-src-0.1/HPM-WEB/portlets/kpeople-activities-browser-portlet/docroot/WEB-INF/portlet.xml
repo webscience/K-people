@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<portlet-app
+	version="2.0"
+	xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd"
+>
+	<portlet>
+		<portlet-name>kpeople-activities-browser</portlet-name>
+		<display-name>Kpeople activities browser</display-name>
+		<portlet-class>org.apache.portals.bridges.struts.StrutsPortlet</portlet-class>
+		<init-param>
+			<name>ServletContextProvider</name>
+            <value>com.liferay.util.bridges.struts.LiferayServletContextProviderWrapper</value>
+		</init-param>
+		<init-param>
+			<name>ViewPage</name>
+			<value>/portlet_action/activities-browser/view</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+		</supports>
+		<portlet-info>
+			<title>Kpeople activities browser</title>
+			<short-title>Kpeople activities browser</short-title>
+			<keywords>kpeople activities browser</keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
+</portlet-app>

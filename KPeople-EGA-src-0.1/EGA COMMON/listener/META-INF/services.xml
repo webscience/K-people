@@ -1,0 +1,6 @@
+<service name="GetNewActionService">
+    <description>
+        This service get a new action service.
+    </description>
+    <parameter name="ServiceClass" locked="true">it.webscience.kpeople.ega.adapter.actionListener.ActionListenerWS</parameter>
+</service>

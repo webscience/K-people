@@ -1,0 +1,8 @@
+<project default="copy-resources">
+  <target name="init"/>
+  <target name="copy-resources" depends="init">
+    <copy todir="target/classes/META-INF/services" filtering="false">
+      <fileset dir="resources/META-INF/services" includes="org.apache.synapse.config.xml.MediatorFactory|org.apache.synapse.config.xml.MediatorSerializer" excludes="**/*.java"/>
+    </copy>
+  </target>
+</project>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artifact name="it.webscience.kpeople.logging" version="1.0" type="lib/carbon/ui" serverRole="EnterpriseServiceBus">
+    <file>carbon-ui-data.xml</file>
+</artifact>

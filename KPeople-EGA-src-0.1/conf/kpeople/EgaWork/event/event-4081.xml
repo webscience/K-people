@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<event xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SHAREPOINT.systemId40812011-05-09 09:42:32.0">
+  <action>
+    <action-type>DOCUMENT/DELETED</action-type>
+    <action-reference>http://192.168.0.106:80/Documents/1158163.jpg</action-reference>
+    <system>
+      <system-id>SHAREPOINT.systemId</system-id>
+      <system-type>SHAREPOINT</system-type>
+    </system>
+  </action>
+  <event-data/>
+</event>

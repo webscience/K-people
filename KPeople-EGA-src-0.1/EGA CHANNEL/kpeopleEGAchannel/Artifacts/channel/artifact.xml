@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<artifact name="channel" version="1.0.0" type="lib/carbon/ui" serverRole="ApplicationServer">
+    <file>carbon-ui-data.xml</file>
+</artifact>

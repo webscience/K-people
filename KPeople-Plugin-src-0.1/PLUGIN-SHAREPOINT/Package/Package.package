@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="2d048b66-6f44-4dfe-9b4a-e99a868221d2" solutionId="2d048b66-6f44-4dfe-9b4a-e99a868221d2" resetWebServer="false" name="CustomProcessColumn" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="98c87888-f0b6-4fe0-8999-f9e0612cd6e7" />
+  </features>
+</package>

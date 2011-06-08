@@ -1,0 +1,30 @@
+<event xmlns="http://service.kpeople.webscience.it" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="70sxhheumailserver.POSTFIX.systemId@3007@2011-03-03 21:56:48.0">
+  <action>
+    <action-type>COMMUNICATION</action-type>
+    <action-reference>smb://192.168.0.62/shared/trace/new/1299185956.Vfb01I89a4fM914855.kpeoplemail</action-reference>
+    <system>
+      <system-id>mailserver.POSTFIX.systemId</system-id>
+      <system-type>mailserver</system-type>
+
+    </system>
+  </action>
+  <event-data>
+    <creation-date>2011-03-03T22:03:12.0Z</creation-date>
+    <title>prova</title>
+    <author>
+      <email>bolognese@kpeople.webscience.it</email>
+
+    </author>
+    <body type="html">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> &lt;html> &lt;head> &lt;meta http-equiv="content-type" content="text/html; charset=ISO-8859-15"> &lt;/head> &lt;body bgcolor="#ffffff" text="#000000"> &lt;font size="-1">prova&lt;/font> &lt;/body> &lt;/html></body>
+    <properties>
+      <property>
+
+        <key>kpeopletag</key>
+        <value>multi[#&]:rda1185#&prg1186</value>
+      </property>
+    </properties>
+    <details>&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;email-details>&lt;receivers>&lt;receiver-to>bolognese@kpeople.webscience.it&lt;/receiver-to>&lt;/receivers>&lt;/email-details></details>
+
+  </event-data>
+</event>

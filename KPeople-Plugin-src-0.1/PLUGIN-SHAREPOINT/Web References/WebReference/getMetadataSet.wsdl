@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:ax21="http://io.java/xsd" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns="http://soa.kpeople.webscience.it" xmlns:http1="http://schemas.xmlsoap.org/wsdl/http/" xmlns:ns1="http://org.apache.axis2/xsd" targetNamespace="http://soa.kpeople.webscience.it" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>getMetadataSet</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema xmlns:ax22="http://soa.kpeople.webscience.it" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://io.java/xsd">
+      <xs:import namespace="http://soa.kpeople.webscience.it" />
+      <xs:complexType name="IOException">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ax22:Exception">
+            <xs:sequence />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+      <xs:complexType name="FileNotFoundException">
+        <xs:complexContent mixed="false">
+          <xs:extension base="ax21:IOException">
+            <xs:sequence />
+          </xs:extension>
+        </xs:complexContent>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema xmlns:ax23="http://io.java/xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://soa.kpeople.webscience.it">
+      <xs:import namespace="http://io.java/xsd" />
+      <xs:complexType name="Exception">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Exception" nillable="true" type="xs:anyType" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="FileNotFoundException">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="FileNotFoundException" nillable="true" type="ax23:FileNotFoundException" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="XMLStreamException">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="XMLStreamException" nillable="true" type="xs:anyType" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="metadataSet">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="metadataSetResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:anyType" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="metadataSetRequest">
+    <wsdl:part name="parameters" element="ns:metadataSet" />
+  </wsdl:message>
+  <wsdl:message name="metadataSetResponse">
+    <wsdl:part name="parameters" element="ns:metadataSetResponse" />
+  </wsdl:message>
+  <wsdl:message name="FileNotFoundException">
+    <wsdl:part name="parameters" element="ns:FileNotFoundException" />
+  </wsdl:message>
+  <wsdl:message name="XMLStreamException">
+    <wsdl:part name="parameters" element="ns:XMLStreamException" />
+  </wsdl:message>
+  <wsdl:portType name="getMetadataSetPortType">
+    <wsdl:operation name="metadataSet">
+      <wsdl:input wsaw:Action="urn:metadataSet" message="ns:metadataSetRequest" />
+      <wsdl:output wsaw:Action="urn:metadataSetResponse" message="ns:metadataSetResponse" />
+      <wsdl:fault wsaw:Action="urn:metadataSetFileNotFoundException" name="FileNotFoundException" message="ns:FileNotFoundException" />
+      <wsdl:fault wsaw:Action="urn:metadataSetXMLStreamException" name="XMLStreamException" message="ns:XMLStreamException" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="getMetadataSetSoap11Binding" type="ns:getMetadataSetPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="metadataSet">
+      <soap:operation soapAction="urn:metadataSet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="XMLStreamException">
+        <soap:fault use="literal" name="XMLStreamException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="FileNotFoundException">
+        <soap:fault use="literal" name="FileNotFoundException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="getMetadataSetSoap12Binding" type="ns:getMetadataSetPortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="metadataSet">
+      <soap12:operation soapAction="urn:metadataSet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="XMLStreamException">
+        <soap12:fault use="literal" name="XMLStreamException" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="FileNotFoundException">
+        <soap12:fault use="literal" name="FileNotFoundException" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="getMetadataSetHttpBinding" type="ns:getMetadataSetPortType">
+    <http1:binding verb="POST" />
+    <wsdl:operation name="metadataSet">
+      <http1:operation location="metadataSet" />
+      <wsdl:input>
+        <mime:content part="metadataSet" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="metadataSet" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="getMetadataSet">
+    <wsdl:port name="getMetadataSetHttpSoap11Endpoint" binding="ns:getMetadataSetSoap11Binding">
+      <soap:address location="http://192.168.0.100:9763/services/getMetadataSet.getMetadataSetHttpSoap11Endpoint/" />
+    </wsdl:port>
+    <wsdl:port name="getMetadataSetHttpsSoap11Endpoint" binding="ns:getMetadataSetSoap11Binding">
+      <soap:address location="https://192.168.0.100:9443/services/getMetadataSet.getMetadataSetHttpsSoap11Endpoint/" />
+    </wsdl:port>
+    <wsdl:port name="getMetadataSetHttpsSoap12Endpoint" binding="ns:getMetadataSetSoap12Binding">
+      <soap12:address location="https://192.168.0.100:9443/services/getMetadataSet.getMetadataSetHttpsSoap12Endpoint/" />
+    </wsdl:port>
+    <wsdl:port name="getMetadataSetHttpSoap12Endpoint" binding="ns:getMetadataSetSoap12Binding">
+      <soap12:address location="http://192.168.0.100:9763/services/getMetadataSet.getMetadataSetHttpSoap12Endpoint/" />
+    </wsdl:port>
+    <wsdl:port name="getMetadataSetHttpsEndpoint" binding="ns:getMetadataSetHttpBinding">
+      <http1:address location="https://192.168.0.100:9443/services/getMetadataSet.getMetadataSetHttpsEndpoint/" />
+    </wsdl:port>
+    <wsdl:port name="getMetadataSetHttpEndpoint" binding="ns:getMetadataSetHttpBinding">
+      <http1:address location="http://192.168.0.100:9763/services/getMetadataSet.getMetadataSetHttpEndpoint/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

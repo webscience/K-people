@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+  <primitive>true</primitive>
+  <annotatorImplementationName>it.webscience.uima.annotators.TikaAnnotator</annotatorImplementationName>
+  <analysisEngineMetaData>
+    <name>org.apache.uima.tika.MarkupAnnotator</name>
+    <description>Uses Tika to generate annotations from original markup</description>
+    <version>1.0</version>
+    <vendor>Apache Software Foundation</vendor>
+    <configurationParameters>
+      <configurationParameter>
+        <name>ORIGINAL_VIEW_PARAM_NAME</name>
+        <description>Name of the view used for storing the original content</description>
+        <type>String</type>
+        <multiValued>false</multiValued>
+        <mandatory>true</mandatory>
+      </configurationParameter>
+      <configurationParameter>
+        <name>TEXT_VIEW_PARAM_NAME</name>
+        <description>Name of the view used to store the text extracted from the original document</description>
+        <type>String</type>
+        <multiValued>false</multiValued>
+        <mandatory>true</mandatory>
+      </configurationParameter>
+      <configurationParameter>
+        <name>SET_TEXT_VIEW_DEFAULT_PARAM_NAME</name>
+        <description>Indicates whether the Text view should be marked as the one to use by default</description>
+        <type>Boolean</type>
+        <multiValued>false</multiValued>
+        <mandatory>true</mandatory>
+      </configurationParameter>
+    </configurationParameters>
+    <configurationParameterSettings>
+      <nameValuePair>
+        <name>ORIGINAL_VIEW_PARAM_NAME</name>
+        <value>
+          <string>_InitialView</string>
+        </value>
+      </nameValuePair>
+      <nameValuePair>
+        <name>TEXT_VIEW_PARAM_NAME</name>
+        <value>
+          <string>textView</string>
+        </value>
+      </nameValuePair>
+      <nameValuePair>
+        <name>SET_TEXT_VIEW_DEFAULT_PARAM_NAME</name>
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </nameValuePair>
+    </configurationParameterSettings>
+    <typePriorities/>
+    <fsIndexCollection/>
+    <capabilities>
+      <capability>
+        <inputs/>
+        <outputs>
+          <type allAnnotatorFeatures="true">it.webscience.uima.annotations.MarkupAnnotation</type>
+        </outputs>
+        <languagesSupported>
+          <language>x-unspecified</language>
+        </languagesSupported>
+      </capability>
+    </capabilities>
+    <operationalProperties>
+      <modifiesCas>true</modifiesCas>
+      <multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+      <outputsNewCASes>true</outputsNewCASes>
+    </operationalProperties>
+  </analysisEngineMetaData>
+  <resourceManagerConfiguration/>
+</analysisEngineDescription>

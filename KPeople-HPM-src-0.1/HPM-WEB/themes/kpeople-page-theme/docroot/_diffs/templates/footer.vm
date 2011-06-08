@@ -1,0 +1,20 @@
+<a href="$themeDisplay.getURLHome()" target="new"> 
+	<div id="footer-kpeople"></div>
+</a>
+<a href="http://www.webscience.it" target="new"> 
+	<div id="footer-ws"></div>
+</a>
+
+<div id="footer-col1"></div>
+
+
+<div id="footer-col7">
+	K people<br/>
+	All right reserved<br/>
+	Copyright &copy; 2010
+</div>
+<div id="footer-col8">
+	Project by
+</div>
+
+

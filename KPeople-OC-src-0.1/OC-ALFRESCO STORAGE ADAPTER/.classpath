@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/SDK AlfrescoEmbedded"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/SDK AlfrescoRemote"/>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v6.0"/>
+	<classpathentry kind="lib" path="src/WEB-INF/lib/axiom-api-1.2.9.jar"/>
+	<classpathentry kind="lib" path="src/WEB-INF/lib/axiom-dom-1.2.9.jar"/>
+	<classpathentry kind="lib" path="src/WEB-INF/lib/axiom-impl-1.2.9.jar"/>
+	<classpathentry kind="lib" path="src/WEB-INF/lib/uimaJava.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
