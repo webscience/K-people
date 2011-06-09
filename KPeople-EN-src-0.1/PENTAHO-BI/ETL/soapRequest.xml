@@ -1,0 +1,7 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Body>
+      <ns3:getUserByHpmUserId xmlns:ns3="http://cross.service.kpeople.webscience.it">
+         <ns3:hpmUserId>filieri@kpeople.webscience.it</ns3:hpmUserId>
+      </ns3:getUserByHpmUserId>
+   </soapenv:Body>
+</soapenv:Envelope>

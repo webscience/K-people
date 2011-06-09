@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<Schema name="comunicazioni_schema">
+	<Dimension name="Destinatari">
+		<Hierarchy hasAll="true"  allMemberName="All destinatari" primaryKey="ID_USER">
+			<Table name="user"/>
+			<Level name="Utenti destinatari" column="HPM_USER_ID" type="String" uniqueMembers="true"/>
+		</Hierarchy>
+	</Dimension>
+  
+	<Dimension name="Mittenti">
+		<Hierarchy hasAll="true"  allMemberName="All mittenti" primaryKey="ID_USER">
+			<Table name="user"/>
+			<Level name="Utenti mittenti" column="LAST_NAME" type="String" uniqueMembers="true"/>
+		</Hierarchy>
+	</Dimension>
+  
+	<Dimension name="Processo">
+		<Hierarchy hasAll="true" allMemberName="All Process" primaryKey="ID_PROCESS">
+			<Table name="process"/>
+			<Level name="Nome Processo" column="HPM_PROCESS_ID" type="String" uniqueMembers="true"/>
+		</Hierarchy>
+	</Dimension>
+	
+	<Dimension name="Tipologia">
+		<Hierarchy hasAll="true" allMemberName="All Tipologie" primaryKey="ID_PROCESS_TYPE" >
+			<Table name="process_type"/>
+			<Level name="Process Type" table="process_type" column="NAME" type="String" uniqueMembers="true"/>
+		</Hierarchy>
+	</Dimension>
+  <Cube name="comunicazioni">
+	<Table name="tb_comunicazioni"/>
+		  <Dimension name="Tempo">
+			<Hierarchy hasAll="true" allMemberName="All Time">
+			  <Table name="tb_comunicazioni"/>
+			  <Level name="Tempo" column="FIRST_ACTION_DATE" uniqueMembers="false"/>
+			</Hierarchy>
+		  </Dimension>
+		<DimensionUsage name="Destinatari" source="Destinatari" foreignKey="ID_USER_DEST"/>
+		<DimensionUsage name="Mittenti" source="Mittenti" foreignKey="ID_USER_FROM"/>
+		<DimensionUsage name="Processo" source="Processo" foreignKey="ID_PROCESS"/>
+		<DimensionUsage name="Tipologia" source="Tipologia" foreignKey="ID_PROCESS_TYPE"/>
+		<Measure name="Comunicazioni A" column="ID_USER_TO" aggregator="count" formatString="#"/>
+		<Measure name="Comunicazioni Totali" column="ID_USER_DEST" aggregator="count" formatString="#"/>
+		<Measure name="Comunicazioni In Copia" column="ID_USER_CC" aggregator="count" formatString="#"/>
+		<Measure name="Comunicazioni Da" column="ID_USER_FROM" aggregator="count" formatString="#"/>
+		<CalculatedMember name="comunicazioni_verso" dimension="Measures" formula="([Measures].[Comunicazioni A] + [Measures].[Comunicazioni In Copia])" >
+			<CalculatedMemberProperty name="FORMAT_STRING" value="#"/>
+		</CalculatedMember>
+  </Cube>
+</Schema>

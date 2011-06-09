@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<Schema name="Comunicazioni"> 
+  <Dimension name="Process_Status">
+    <Hierarchy hasAll="true" allMemberName="All Process Status" primaryKey="ID_PROCESS_STATE">
+      <Table name="process_state"/>
+      <Level name="process_state" column="PROCESS_STATE" uniqueMembers="true"/>
+    </Hierarchy>
+  </Dimension>
+
+  <Dimension name="Process">
+    <Hierarchy hasAll="true" allMemberName="All Processes" primaryKey="ID_PROCESS" primaryKeyTable="process">
+      <Join leftKey="ID_PROCESS_TYPE" rightKey="ID_PROCESS_TYPE">
+        <Table name="process"/>
+        <Table name="process_type"/>
+      </Join>
+      <Level name="Process Type" table="process_type" column="NAME" uniqueMembers="true"/>
+      <Level name="Process Name" table="process" column="NAME"
+          uniqueMembers="true"/>
+    </Hierarchy>
+  </Dimension>
+  
+  <Dimension name="Time" type="TimeDimension">
+    <Hierarchy hasAll="false" primaryKey="ID_TIME">
+      <Table name="time"/>
+      <Level name="Year" column="the_year" type="Numeric" uniqueMembers="true"
+          levelType="TimeYears"/>
+      <Level name="Quarter" column="quarter" uniqueMembers="false"
+          levelType="TimeQuarters"/>
+      <Level name="Month" column="month_of_year" uniqueMembers="false" type="Numeric"
+          levelType="TimeMonths"/>
+    </Hierarchy>
+  </Dimension>
+
+  <Dimension name="Event">
+    <Hierarchy hasAll="true" allMemberName="All Events" primaryKey="ID_EVENT">
+      <Table name="event"/>
+      <Level name="event" column="NAME" uniqueMembers="true"/>
+    </Hierarchy>
+  </Dimension>
+   
+  <Cube name="WarehouseProcess">
+  <Table name="process_state_time_event_bi"/>
+  <DimensionUsage name="Process_Status" source="Process_Status" foreignKey="ID_PROCESS_STATE"/>
+  <DimensionUsage name="Process" source="Process" foreignKey="ID_PROCESS"/>
+  <DimensionUsage name="Time" source="Time" foreignKey="ID_TIME"/>
+  <DimensionUsage name="Event" source="Event" foreignKey="ID_EVENT"/>
+  <Measure name="Numero eventi" column="id_event" aggregator="distinct-count"/>
+  <Measure name="Numero processi" column="id_process" aggregator="distinct-count"/>
+  </Cube>
+
+</Schema>

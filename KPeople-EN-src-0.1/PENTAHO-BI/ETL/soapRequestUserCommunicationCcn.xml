@@ -1,0 +1,6 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Body>
+      <ns3:getUserEventsCommunicationCCN xmlns:ns3="http://report.service.kpeople.webscience.it">
+      </ns3:getUserEventsCommunicationCCN>
+   </soapenv:Body>
+</soapenv:Envelope>

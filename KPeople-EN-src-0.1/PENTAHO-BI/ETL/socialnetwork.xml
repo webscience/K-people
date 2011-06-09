@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<graph id="User Network)" label="User Network" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns1="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.cs.rpi.edu/XGMML">
+    <att name="documentVersion" value="1.0"/>
+    <att name="backgroundColor" value="#9999ff"/>
+    <att label="documentVersion" name="documentVersion" value="1.0" type="string"/>
+    
+</graph>    

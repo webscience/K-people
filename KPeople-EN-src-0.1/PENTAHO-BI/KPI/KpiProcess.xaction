@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<action-sequence> 
+  <name>test1.xaction</name>
+  <title>KPI PROCESS</title>
+  <version>1</version>
+  <logging-level>debug</logging-level>
+  <documentation> 
+    <author>Michael D'Amour</author>  
+    <description><![CDATA[Generates a Pentaho report in the specified format. The location of the report definition is specified using a solution relative path.]]></description>  
+    <icon>/style/icons/jfree1.png</icon>  
+    <help/>  
+    <result-type>report</result-type> 
+  </documentation>
+
+  <inputs> 
+    <reportDefinitionPath type="string"> 
+      <sources> 
+        <request>reportDefinitionPath</request> 
+      </sources>  
+      <default-value><![CDATA[/bi-developers/analysis/REPORTPROCESSTOTALE.prpt]]></default-value> 
+    </reportDefinitionPath> 
+  </inputs>
+
+  <outputs> 
+    <myReport type="content"> 
+      <destinations> 
+        <response>content</response> 
+      </destinations> 
+    </myReport> 
+  </outputs>
+
+  <resources/>
+  
+  <actions> 
+    <action-definition> 
+      <component-name>SimpleReportingComponent</component-name>
+      <action-type>Generate the report using a solution path to the report definition</action-type>
+      <action-inputs> 
+        <reportDefinitionPath type="string"/> 
+      </action-inputs>
+      <action-outputs> 
+        <outputstream type="content" mapping="myReport"/> 
+      </action-outputs>
+      <component-definition/> 
+    </action-definition>
+ 
+  </actions> 
+</action-sequence>

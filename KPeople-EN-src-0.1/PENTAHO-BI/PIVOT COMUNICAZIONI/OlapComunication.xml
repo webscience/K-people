@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<Schema name="Comunicazioni"> 
+  
+
+  <Dimension name="Process">
+    <Hierarchy hasAll="true" allMemberName="All Processes" primaryKey="ID_PROCESS" primaryKeyTable="process">
+      <Join leftKey="ID_PROCESS_TYPE" rightKey="ID_PROCESS_TYPE">
+        <Table name="process"/>
+        <Table name="process_type"/>
+      </Join>
+      <Level name="Process Type" table="process_type" column="NAME" uniqueMembers="true"/>
+      <Level name="Process Name" table="process" column="NAME" uniqueMembers="true"/>
+    </Hierarchy>
+  </Dimension>
+  
+  <Dimension name="Sender">
+    <Hierarchy hasAll="true"  allMemberName="All Senders" primaryKey="ID_USER">
+        <Table name="user"/>
+      <Level name="Mittenti" column="SCREEN_NAME" uniqueMembers="true"/>
+    </Hierarchy>
+  </Dimension>
+  
+  <Dimension name="Receiver">
+    <Hierarchy hasAll="true"  allMemberName="All Receivers" primaryKey="ID_USER">
+        <Table name="user"/>
+      <Level name="Destinatari" column="SCREEN_NAME" uniqueMembers="true"/>
+    </Hierarchy>
+  </Dimension>
+  
+  <Dimension name="Time">
+    <Hierarchy hasAll="true"  allMemberName="All Time" primaryKey="ID_TIME">
+        <Table name="time_event"/>
+      <Level name="Ultimi sei mesi" column="ULTIMI_SEI_MESI" uniqueMembers="true"/>
+	  <Level name="Ultimi tre mesi" column="ULTIMI_TRE_MESI" uniqueMembers="true"/>
+	  <Level name="Ultimo mese" column="ULTIMO_MESE" uniqueMembers="true" hideMemberIf="IfBlankName" />
+    </Hierarchy>
+  </Dimension>
+  
+  <Cube name="WarehouseProcess">
+  <Table name="tb_comunicazioni"/>
+  <DimensionUsage name="Process" source="Process" foreignKey="ID_PROCESS"/>
+  <DimensionUsage name="Sender" source="Sender" foreignKey="ID_USER_FROM"/>
+  <DimensionUsage name="Receiver" source="Receiver" foreignKey="ID_USER_DEST"/>
+  <DimensionUsage name="Time" source="Time" foreignKey="ID_TIME"/>
+  <Measure name="Numero Comunicazioni" column="ID_USER_DEST" aggregator="count"/>
+  </Cube>
+
+</Schema>

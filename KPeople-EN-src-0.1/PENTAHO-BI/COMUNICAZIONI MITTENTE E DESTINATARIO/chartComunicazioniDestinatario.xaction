@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<action-sequence> 
+  <title>CHARTCOMUNICAZIONIDESTINATARIOSCALADINAMICA</title>
+  <version>1</version>
+  <logging-level>DEBUG</logging-level>
+  <documentation> 
+    <author/>  
+    <description>Empty blank action sequence document</description>  
+    <help/>  
+    <result-type/>  
+    <icon/> 
+  </documentation>
+
+  <inputs> 
+    <nameUser type="string"> 
+      <sources> 
+        <request>nameUser</request> 
+      </sources>  
+      <default-value><![CDATA[spalluto@kpeople.webscience.it]]></default-value> 
+    </nameUser>  
+    <hpmProcessId type="string"> 
+      <sources> 
+        <request>hpmProcessId</request> 
+      </sources>  
+      <default-value><![CDATA[0]]></default-value> 
+    </hpmProcessId>  
+    <widthChart type="integer"> 
+      <default-value><![CDATA[350]]></default-value>  
+      <sources> 
+        <request>widthChart</request> 
+      </sources> 
+    </widthChart>  
+    <heightChart type="integer"> 
+      <sources> 
+        <request>heightChart</request> 
+      </sources>  
+      <default-value><![CDATA[300]]></default-value> 
+    </heightChart>  
+    <idProcessType type="string"> 
+      <sources> 
+        <request>idProcessType</request> 
+      </sources>  
+      <default-value><![CDATA[0]]></default-value> 
+    </idProcessType>  
+    <languageid type="string"> 
+      <sources> 
+        <request>languageid</request> 
+      </sources>  
+      <default-value><![CDATA[en_US]]></default-value> 
+    </languageid> 
+  </inputs>
+
+  <outputs> 
+    <image-tag type="content"> 
+      <destinations> 
+        <response>content</response> 
+      </destinations> 
+    </image-tag> 
+  </outputs>
+
+  <resources> 
+    <catalog> 
+      <solution-file> 
+        <location>comunicazioniDestinatarioAggiornato.xml</location>  
+        <mime-type>text/plain</mime-type> 
+      </solution-file> 
+    </catalog> 
+  </resources>
+  
+  <actions> 
+    <action-definition> 
+      <component-name>JavascriptRule</component-name>
+      <action-type>JavaScript</action-type>
+      <action-inputs> 
+        <nameUser type="string"/>  
+        <hpmProcessId type="string"/>  
+        <idProcessType type="string"/>  
+        <languageid type="string"/> 
+      </action-inputs>
+      <action-outputs> 
+        <query type="string"/>  
+        <visible type="string"/>  
+        <title type="string"/>  
+        <labely type="string"/> 
+      </action-outputs>
+      <component-definition> 
+        <script><![CDATA[var query;
+var title;
+var titleopt1; 
+var titleopt2;
+var titleopt3;
+var languageid;
+var labely;
+
+switch (languageid) {
+	case ('it_IT') :
+		titleopt1 = "Intensita' delle comunicazioni ricevute dell'utente";
+		titleopt2 = "Intensita' delle comunicazioni ricevute dell'utente filtrate per processo";
+		titleopt3 = "Intensita' delle comunicazioni ricevute dell'utente filtrate per tipologia di processo";
+		labely = "N. Comunicazioni"
+		break;
+	case ('en_US') : 
+		titleopt1 = "Intensity of communications received user";
+		titleopt2 = "Intensity of communications received by user filtered by process";
+		titleopt3 = "Intensity of communications received by user filtered by type of process";
+		labely = "N. Communications"
+		break;
+	case ('es_ES') : 
+		titleopt1 = "La intensidad de las comunicaciones recibidas de usuario";
+		titleopt2 = "La intensidad de las comunicaciones recibidas de usuario filtrada por proceso ";
+		titleopt3 = "La intensidad de las comunicaciones recibidas de usuario filtrar por tipo de proceso";
+		labely = "N. Comunicaciones"
+		break;
+	case ('pt_PT') : 
+		titleopt1 = "Intensidade das comunicações recebidas do usuário";
+		titleopt2 = "Intensidade de comunicação recebidas do usuário filtrado pelo processo";
+		titleopt3 = "Intensidade das comunicações recebidas do usuário filtrado por tipo de processo";
+		labely = "N. Comunicações"
+		break;
+	case ('vi_VN') : 
+		titleopt1 = "Intensitatea de comunicatii primite utilizator";
+		titleopt2 = "Intensitatea de comunicare primite filtrate printr-un proces utilizator";
+		titleopt3 = "Intensitatea de comunicatii utilizator primite filtrate în functie de tipul de proces";
+		labely = "N. Comunicatii"
+		break;			
+}		
+
+if ((hpmProcessId == 0)&&(idProcessType == 0)) {
+(query = "select NON EMPTY Crossjoin({[Mittenti].[All mittenti].Children}, {[Processo].Children}) ON COLUMNS, NON EMPTY {[Destinatari].[All destinatari].[{nameUser}]} ON ROWS from [comunicazioni] where[Measures].[Comunicazioni Totali]");
+var visible = true;
+ title = titleopt1;
+}
+else {
+		if (hpmProcessId != 0) {
+			(query = "select NON EMPTY Crossjoin({[Mittenti].[All mittenti].Children}, {[Processo].[All process].[{hpmProcessId}]}) ON COLUMNS, NON EMPTY {[Destinatari].[All destinatari].[{nameUser}]} ON ROWS from [comunicazioni] where [Measures].[Comunicazioni Totali]");
+			var visible = true;
+			title = titleopt2;
+		} else {
+				(query = "select NON EMPTY Crossjoin({[Mittenti].[All mittenti].Children}, {[Tipologia].[All Tipologie].[{idProcessType}]}) ON COLUMNS, NON EMPTY {[Destinatari].[All destinatari].[{nameUser}]} ON ROWS from [comunicazioni] where   [Measures].[Comunicazioni Totali]");
+				var visible = true;
+				title = titleopt3;
+	    }
+}]]></script> 
+      </component-definition> 
+    </action-definition>
+  
+    <action-definition> 
+      <component-name>MDXLookupRule</component-name>
+      <action-type>OLAP</action-type>
+      <action-inputs> 
+        <nameUser type="string"/>  
+        <hpmProcessId type="string"/>  
+        <query type="string"/> 
+      </action-inputs>
+      <action-resources> 
+        <catalog type="resource"/> 
+      </action-resources>
+      <action-outputs> 
+        <query-results type="result-set" mapping="query_result"/> 
+      </action-outputs>
+      <component-definition> 
+        <location><![CDATA[mondrian]]></location>  
+        <jndi><![CDATA[kpeopleR]]></jndi> 
+      </component-definition> 
+    </action-definition>
+  
+    <action-definition> 
+      <component-name>JavascriptRule</component-name>
+      <action-type>JavaScript</action-type>
+      <action-inputs> 
+        <query_result type="result-set"/> 
+      </action-inputs>
+      <action-outputs> 
+        <maxdiscala type="integer"/> 
+      </action-outputs>
+      <component-definition> 
+        <script><![CDATA[var maxdiscala;
+maxdiscala = 10;
+
+for(var i=0 ; i < query_result.getRowCount(); i++){
+  if(query_result.getValueAt(i,0) > maxdiscala){
+     maxdiscala = query_result.getValueAt(i,0) + 3;
+  }
+}]]></script> 
+      </component-definition> 
+    </action-definition>
+  
+    <action-definition> 
+      <component-name>ChartComponent</component-name>
+      <action-type>Intensita' delle Comunicazioni Ricevute</action-type>
+      <action-inputs> 
+        <chart-data type="result-set" mapping="query_result"/>  
+        <width type="integer" mapping="widthChart"/>  
+        <height type="integer" mapping="heightChart"/>  
+        <maxdiscala type="integer"/>  
+        <visible type="string"/>  
+        <title type="string"/>  
+        <labely type="string"/> 
+      </action-inputs>
+      <action-outputs> 
+        <image-tag type="content"/> 
+      </action-outputs>
+      <component-definition> 
+        <chart-attributes> 
+          <chart-type>BarChart</chart-type>  
+          <border-visible>true</border-visible>  
+          <title-font> 
+            <size>12</size>  
+            <is-bold>true</is-bold> 
+          </title-font>  
+          <orientation>vertical</orientation>  
+          <!-- valid values: vertical, horizontal -->  
+          <is-stacked>false</is-stacked>  
+          <!-- set to true for a stacked bar -->  
+          <is-3D>true</is-3D>  
+          <is-glass>false</is-glass>  
+          <!-- set to true to apply the 'glass' style to bars -->  
+          <is-sketch>false</is-sketch>  
+          <!-- set to true to apply the 'sketch' style to bars -->  
+          <!--  X-Axis properties (domain)-->  
+          <domain-title/>  
+          <domain-title-font> 
+            <font-family>Arial</font-family>  
+            <size>12</size>  
+            <is-bold>false</is-bold> 
+          </domain-title-font>  
+          <domain-tick-font> 
+            <font-family>Arial</font-family>  
+            <size>8</size>  
+            <is-bold>false</is-bold>  
+            <is-italic>false</is-italic> 
+          </domain-tick-font>  
+          <domain-label-rotation>1.2</domain-label-rotation>  
+          <domain-label-rotation-dir/>  
+          <domain-color>#000000</domain-color>  
+          <!-- color of x-axis -->  
+          <domain-grid-color>#FFFFFF</domain-grid-color>  
+          <!-- color of vertical grid lines -->  
+          <domain-stroke>1</domain-stroke>  
+          <!-- thickness of the x-axis -->  
+          <!--  Y-Axis properties (range) -->  
+          <range-title>{labely}</range-title>  
+          <range-title-font> 
+            <font-family>Arial</font-family>  
+            <size>12</size>  
+            <is-bold>false</is-bold> 
+          </range-title-font>  
+          <range-minimum>0</range-minimum>  
+          <range-maximum>{maxdiscala}</range-maximum>  
+          <!-- defines maximum ending point for y-axis -->  
+          <range-color>#000000</range-color>  
+          <!-- color of y-axis -->  
+          <range-grid-color>#EAEAEA</range-grid-color>  
+          <!-- color of horizontal grid lines -->  
+          <range-stroke>1</range-stroke>  
+          <!-- thickness of y-axis -->  
+          <range-steps>6</range-steps>  
+          <range-tick-format>0</range-tick-format>  
+          <!-- specify number of ticks, defaults to auto-calculated number -->  
+          <!-- Specify the color palette for the chart -->  
+          <include-legend>{visible}</include-legend>  
+          <legend-font> 
+            <size>9</size> 
+          </legend-font> 
+        </chart-attributes>  
+        <title>{title}</title>  
+        <by-row><![CDATA[false]]></by-row> 
+      </component-definition> 
+    </action-definition>
+ 
+  </actions> 
+</action-sequence>
