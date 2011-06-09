@@ -7,6 +7,6 @@ K-people is composed of different parts:
  * Enterprise Network (EN). This component is the store of the system and is based on different storage: Alfresco, SOLR, Sesame and MySQL.
  * Human Process Management (HPM). This component is the UI of the system and is composed by the Web Service sub-component (WS) and the Web sub-component. The Web Service sub-component run on the WSO2 AS Server and the Web sub-component run on Liferay portal.
 
-More architecture deatails and the installation instruction are acailable on the Kpeople site:
+More architecture deatails and the installation instructions are available on the Kpeople site:
 http://kpeople.webscience.it
 
