@@ -1,0 +1,49 @@
+Portions of this product distribution require certain copyright or other notices to 
+be included with the product distribution. These notice may also appear in individual 
+source files.
+
+
+Portions of this product are:
+Copyright 2001 The Apache Software Foundation.  
+Copyright 2000-2002 The Apache Software Foundation
+Copyright 2004 The Apache Software Foundation
+Copyright 1991, 1999 Free Software Foundation, GNU LESSER GENERAL PUBLIC LICENSE Version 2.1, February 1999
+Copyright 2010 Terence Parr, BSD License  
+Copyright 2001-2005 MetaStuff
+Copyright Sun Microsystems, Inc. Binary Code License Agreement
+Copyright COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0
+Copyright Common Public License - v 1.0
+Copyright 2003-2007, Dennis M. Sosnoski
+Copyright 2001-2004, Marco Hunsicker.
+Copyright 2003 The Werken Company
+
+
+All rights reserved.
+
+
+This product includes software developed by The Apache Software Foundation 
+(http://www.apache.org/).
+
+This product includes software developed by jGuru.com, 
+http://www.ANTLR.org and http://www.jGuru.com
+
+This product includes software developed by swaldman,
+http://sourceforge.net/projects/c3p0/
+
+This product includes software developed by Sun Microsystems,
+http://www.oracle.com/us/index.html
+
+This product includes software developed by MetaStuff,
+http://www.dom4j.org/
+
+This product includes software developed by Dennis M. Sosnoski,
+http://jibx.sourceforge.net/
+
+This product includes software developed by Marco Hunsicker,
+http://jalopy.sourceforge.net/
+
+This product includes software developed by The Werken Company
+http://jaxen.werken.com/
+
+
+
